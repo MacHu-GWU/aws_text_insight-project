@@ -3,7 +3,7 @@
 from pynamodb.connection import Connection
 from .boto_ses import aws_profile_local_dev
 from .runtime import RuntimeEnum, current_runtime
-from .fstate import FileState, File
+from .fstate import FileStateEnum, File
 
 
 def connect_in_local_runtime() -> Connection:

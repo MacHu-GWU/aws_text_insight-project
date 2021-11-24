@@ -1,17 +1,19 @@
 # -*- coding: utf-8 -*-
 
 import pytest
-from aws_text_insight.lbd.hdl_relocate import _handler, config, lbd_s3_client
+from aws_text_insight.lbd.hdl_relocate import _handler, config, lbd_s3_client, File
 from aws_text_insight.tests.files import EtagEnum
 
 
 def test_handler():
+    File.get(EtagEnum.file_txt.value).delete()
+
     response = _handler(
         bucket=config.s3_bucket_landing,
         key=f"{config.s3_prefix_landing}/file.txt",
         etag=EtagEnum.file_txt.value,
     )
-    assert response["output"] is not None
+    assert response["data"] is not None
 
     response = lbd_s3_client.head_object(
         Bucket=config.s3_bucket_source,

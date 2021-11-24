@@ -1,17 +1,11 @@
 # -*- coding: utf-8 -*-
 
-
-import traceback
 from .event import S3PutEvent
-from .response import Response, Error
 from ..app_config import config
 from ..boto_ses import lbd_s3_client
 from ..dynamodb import File, FileStateEnum
 from ..helpers import join_s3_uri
-from ..ftype import FileTypeEnum, detect_file_type
 
-
-traceback_msg = traceback.format_exc()
 
 def _handler(bucket, key, etag):
     # create an item in DynamoDB
@@ -23,21 +17,13 @@ def _handler(bucket, key, etag):
             state=FileStateEnum.s1_landing.value,
             md5=etag,
             s3_uri_landing=join_s3_uri(bucket, key),
-            type=FileTypeEnum.unknown.value,
         )
         file.save()
     except:
-        return Response(
-            message="failed to talk to DynamoDB",
-            error=Error(
-                traceback=traceback_msg.format_exc()
-            ),
-        ).to_dict()
+        raise
 
     if file.state == FileStateEnum.s1_landing.value:
         try:
-            file_type = detect_file_type(key)
-
             # relocate s3 object
             lbd_s3_client.copy_object(
                 Bucket=config.s3_bucket_source,
@@ -50,33 +36,23 @@ def _handler(bucket, key, etag):
             # update DynamoDB item
             file.update(
                 actions=[
-                    File.type.set(file_type.value),
-                    File.state.set(FileStateEnum.s2_source.value),
+                    File.state.set(FileStateEnum.s2_source.value)
                 ]
             )
-
-            return Response(
-                message="success!",
-                data=dict(
-                    s3_input=join_s3_uri(bucket, key),
-                    s3_output=config.s3_uri_source(etag=file.etag),
-                ),
-            ).to_dict()
+            return {
+                "message": "success!",
+                "output": config.s3_uri_source(etag=file.etag)
+            }
         except Exception as e:
-            return Response(
-                message="s3 copy object failed or dynamodb update failed",
-                error=Error(
-                    traceback=traceback_msg.format_exc()
-                ),
-            ).to_dict()
+            return {
+                "message": "error: {}".format(repr(e)),
+                "output": None
+            }
     else:
-        return Response(
-            message="already did!",
-            data=dict(
-                s3_input=join_s3_uri(bucket, key),
-                s3_output=config.s3_uri_source(etag=file.etag),
-            ),
-        ).to_dict()
+        return {
+            "message": "already did!",
+            "output": config.s3_uri_source(etag=file.etag)
+        }
 
 
 def handler(event, context):

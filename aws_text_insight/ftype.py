@@ -9,12 +9,14 @@ import enum
 
 
 class FileTypeEnum(enum.Enum):
+    unknown = "unknown"
     text = "text"
     pdf = "pdf"
     image = "image"
 
 
 file_extensions_mapper = {
+    FileTypeEnum.text: {".txt", },
     FileTypeEnum.pdf: {".pdf", },
     FileTypeEnum.image: {".jpg", ".jpeg", ".png", ".bmp"}
 }
@@ -23,7 +25,7 @@ file_extensions_mapper = {
 def detect_file_type(path: str) -> FileTypeEnum:
     _, ext = os.path.splitext(path)
     ext = ext.lower()
-    for file_type, exts in file_extensions_mapper:
+    for file_type, exts in file_extensions_mapper.items():
         if ext in exts:
             return file_type
-    raise TypeError
+    return FileTypeEnum.unknown

@@ -6,7 +6,7 @@ from pynamodb.models import Model
 from pynamodb.attributes import UnicodeAttribute, NumberAttribute
 
 
-class FileState(enum.Enum):
+class FileStateEnum(enum.Enum):
     s1_landing = 1
     s2_source = 2
     s3_textract_output = 3
@@ -25,3 +25,4 @@ class File(Model):
     state: int = NumberAttribute()
     md5: str = UnicodeAttribute()
     s3_uri_landing: str = UnicodeAttribute()
+    type: str = UnicodeAttribute()
