@@ -1,0 +1,5 @@
+# This requirements file should only include minimal dependencies to run this library
+chalice
+boto3
+attrs
+attrs_mate
