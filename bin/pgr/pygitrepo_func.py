@@ -172,6 +172,32 @@ class PyGitRepoFunc(object):
 
         print("[pygitrepo] " + Fore.CYAN + "  done" + Style.RESET_ALL)
 
+    def chalice_copy_source_to_vendor(self):
+        print(
+            "[pygitrepo] "
+            + Fore.CYAN
+            + "copy source to AWS chalice's vendor dir "
+            + Style.RESET_ALL
+            + pgr.PATH_LAMBDA_BUILD_SOURCE
+        )
+
+        dir_project_root = pgr.DIR_PROJECT_ROOT
+        for dirname, dir_basename_list, basename_list in os.walk(pgr.DIR_PYTHON_LIB):
+            for dir_basename in dir_basename_list:
+                abspath = os.path.join(dirname, dir_basename)
+                relpath = os.path.relpath(abspath, dir_project_root)
+                dst = os.path.join(dir_project_root, "app", "vendor", relpath)
+                mkdir_if_not_exists(dst)
+            for basename in basename_list:
+                if basename.endswith(".pyc") \
+                    or basename.endswith(".pyo") \
+                    or dirname.endswith("__pycache__"):
+                    continue
+                abspath = os.path.join(dirname, basename)
+                relpath = os.path.relpath(abspath, dir_project_root)
+                dst = os.path.join(dir_project_root, "app", "vendor", relpath)
+                shutil.copyfile(abspath, dst)
+
 
 pgr_func = PyGitRepoFunc()
 

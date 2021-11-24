@@ -222,10 +222,21 @@ deploy_lbd_func_with_chalice() {
 
     rm_if_exists "${dir_project_root}/app/vendor"
     mkdir_if_not_exists "${dir_project_root}/app/vendor"
+    python "${dir_bin}/pgr/pygitrepo_func.py" "chalice_copy_source_to_vendor"
 
-    "${bin_pip}" install --no-deps --target "${dir_project_root}/app/vendor" "${dir_project_root}"
     (
         cd "${dir_project_root}/app" || exit
-        "${bin_chalice}" deploy --profile "${aws_cli_profile_arg_lambda_deploy}"
+        "${bin_chalice}" deploy --stage prod --profile "${aws_cli_profile_arg_lambda_deploy}"
+    )
+}
+
+# Delete Lambda function deployment with Chalice
+delete_lbd_func_with_chalice() {
+    bin_chalice="$(python "${dir_bin}/pgr/pygitrepo.py" "PATH_VENV_BIN_AWS_CHALICE")"
+    aws_cli_profile_arg_lambda_deploy="$(python "${dir_bin}/pgr/pygitrepo.py" "AWS_CLI_PROFILE_ARG_LAMBDA_DEPLOY")"
+
+    (
+        cd "${dir_project_root}/app" || exit
+        "${bin_chalice}" delete --stage prod --profile "${aws_cli_profile_arg_lambda_deploy}"
     )
 }

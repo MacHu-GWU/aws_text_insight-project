@@ -1,0 +1,17 @@
+{
+  "resources": [
+    {
+      "name": "landing_to_source",
+      "resource_type": "lambda_function",
+      "lambda_arn": "arn:aws:lambda:us-east-1:669508176277:function:aws_text_insight-prod-landing_to_source"
+    },
+    {
+      "name": "landing_to_source-s3event",
+      "resource_type": "s3_event",
+      "bucket": "aws-data-lab-sanhe-for-everything",
+      "lambda_arn": "arn:aws:lambda:us-east-1:669508176277:function:aws_text_insight-prod-landing_to_source"
+    }
+  ],
+  "schema_version": "2.0",
+  "backend": "api"
+}

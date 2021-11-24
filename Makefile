@@ -163,3 +163,6 @@ lbd-bud-layer: lbd-build-upload-deploy-layer ## Build, upload, deploy lambda dep
 
 lbd-deploy-func: ## Deploy lambda functions
 	bash ./bin/lbd/deploy-lbd-func-with-chalice.sh
+
+lbd-delete-func: ## Delete lambda functions
+	bash ./bin/lbd/delete-lbd-func-with-chalice.sh

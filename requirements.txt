@@ -7,3 +7,4 @@ pynamodb
 smart_open
 pysecret
 jsonpickle
+elasticsearch

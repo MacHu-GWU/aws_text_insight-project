@@ -56,9 +56,9 @@ def _handler(bucket, key, etag):
 
 
 def handler(event, context):
-    env = S3PutEvent(**event)
+    env = S3PutEvent(**event["Records"][0])
     return _handler(
-        bucket=env.s3.bucket,
+        bucket=env.s3.bucket.name,
         key=env.s3.object.key,
         etag=env.s3.object.eTag,
     )

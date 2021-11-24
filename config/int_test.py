@@ -8,7 +8,6 @@ from aws_text_insight.boto_ses import lbd_s3_client
 dir_project_root = Path(__file__).parent.parent
 
 
-
 def upload_files():
     for p in Path(dir_project_root, "tests", "files").select_file():
         lbd_s3_client.upload_file(
@@ -16,6 +15,7 @@ def upload_files():
             Bucket=config.s3_bucket_landing,
             Key=f"{config.s3_prefix_landing}/{p.basename}"
         )
+
 
 def delete_files():
     response = lbd_s3_client.list_objects_v2(
@@ -32,6 +32,7 @@ def delete_files():
             Quiet=True,
         )
     )
+
 
 upload_files()
 # delete_files()

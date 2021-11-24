@@ -1,18 +1,18 @@
 {
     "version": "2.0",
-    "app_name": "pgr",
+    "app_name": "aws_text_insight",
     "stages": {
-        "dev": {
-            "lambda_memory_size": 512,
-            "lambda_timeout": 30,
-            "iam_role_arn": "arn:aws:iam::669508176277:role/sanhe-lambda-s3-full-access",
+        "prod": {
+            "iam_role_arn": "arn:aws:iam::669508176277:role/sanhe-lambda-admin-access",
             "manage_iam_role": false,
             "layers": [
-                "arn:aws:lambda:us-east-1:669508176277:layer:pgr:2"
+                "arn:aws:lambda:us-east-1:669508176277:layer:aws_text_insight:1"
             ],
             "lambda_functions": {
-                "handler_split_csv": {},
-                "handler_merge_parquet": {}
+                "landing_to_source": {
+                    "lambda_memory_size": 256,
+                    "lambda_timeout": 10
+                }
             }
         }
     }
