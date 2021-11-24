@@ -3,3 +3,7 @@ chalice
 boto3
 attrs
 attrs_mate
+pynamodb
+smart_open
+pysecret
+jsonpickle
