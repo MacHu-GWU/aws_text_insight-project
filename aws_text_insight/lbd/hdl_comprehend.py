@@ -1,9 +1,9 @@
 # -*- coding: utf-8 -*-
 
 import json
-import logging
 import traceback
 from .event import S3PutEvent
+from .logger import logger
 from .response import Response, Error
 from ..config_init import config
 from ..boto_ses import lbd_s3_client, lbd_ch_client
@@ -83,5 +83,5 @@ def handler(event, context):
     env = S3PutEvent(**event)
     rec = env.Records[0]
     response = _handler(etag=rec.s3.object.eTag)
-    logging.info(f"response: {response}")
+    logger.info(f"response: {response}")
     return response

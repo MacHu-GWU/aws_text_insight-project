@@ -1,15 +1,14 @@
 # -*- coding: utf-8 -*-
 
 import json
-import logging
 import traceback
 from .event import SNSEvent, TextractEvent
+from .logger import logger
 from .response import Response, Error
 from ..config_init import config
 from ..boto_ses import lbd_boto_ses, lbd_s3_client
 from ..dynamodb import File
 from ..fstate import FileStateEnum
-from ..helpers import join_s3_uri
 
 lbd_tx_client = lbd_boto_ses.client("textract")
 
@@ -122,5 +121,5 @@ def handler(event, context):
     rec = env.Records[0]
     textract_event = TextractEvent(**json.loads(rec.Sns.Message))
     response = _handler(textract_event=textract_event)
-    logging.info(f"response: {response}")
+    logger.info(f"response: {response}")
     return response
