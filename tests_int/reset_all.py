@@ -38,6 +38,6 @@ def upload_to_landing():
             f"{config.s3_prefix_landing}/{p.basename}"
         )
 
-# s3_delete_all_objects()
-# dynamodb_delete_all_item()
+s3_delete_all_objects()
+dynamodb_delete_all_item()
 upload_to_landing()

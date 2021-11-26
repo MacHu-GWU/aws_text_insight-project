@@ -64,7 +64,8 @@ def _handler_pdf_image(etag: str, file: File, success_response: Response):
             OutputConfig=dict(
                 S3Bucket=s3_bucket_output,
                 S3Prefix=s3_prefix_output,
-            )
+            ),
+            JobTag=etag,
         )
     except:
         file.update(
@@ -131,3 +132,11 @@ def _handler(etag):
                 traceback=traceback.format_exc(),
             ),
         ).to_dict()
+
+
+def handler(event, context):
+    env = S3PutEvent(**event)
+    rec = env.Records[0]
+    basename = rec.s3.object.key.split("/")[-1]
+    etag = basename.split(".")[0]
+    return _handler(etag=etag)

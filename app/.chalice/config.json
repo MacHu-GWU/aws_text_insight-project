@@ -12,6 +12,14 @@
                 "landing_to_source": {
                     "lambda_memory_size": 256,
                     "lambda_timeout": 10
+                },
+                "source_to_text": {
+                    "lambda_memory_size": 256,
+                    "lambda_timeout": 10
+                },
+                "textract_output_to_text": {
+                    "lambda_memory_size": 1024,
+                    "lambda_timeout": 120
                 }
             }
         }

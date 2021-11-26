@@ -67,7 +67,6 @@ class S3PutEvent(AttrsClass):
 
 
 # --- SNS
-
 @attr.s
 class SNS(AttrsClass):
     Type: str = attr.ib()
@@ -94,3 +93,20 @@ class SNSRecord(AttrsClass):
 @attr.s
 class SNSEvent(AttrsClass):
     Records: typing.List[SNSRecord] = SNSRecord.ib_list_of_nested()
+
+
+# --- Textract
+@attr.s
+class TextractDocumentLocation(AttrsClass):
+    S3ObjectName: str = attr.ib()
+    S3Bucket: str = attr.ib()
+
+
+@attr.s
+class TextractEvent(AttrsClass):
+    JobId: str = attr.ib()
+    Status: str = attr.ib()
+    API: str = attr.ib()
+    JobTag: str = attr.ib()
+    Timestamp: int = attr.ib()
+    DocumentLocation: TextractDocumentLocation = TextractDocumentLocation.ib_nested()

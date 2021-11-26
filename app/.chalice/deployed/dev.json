@@ -1,0 +1,41 @@
+{
+  "resources": [
+    {
+      "name": "landing_to_source",
+      "resource_type": "lambda_function",
+      "lambda_arn": "arn:aws:lambda:us-east-1:669508176277:function:aws_text_insight-dev-landing_to_source"
+    },
+    {
+      "name": "landing_to_source-s3event",
+      "resource_type": "s3_event",
+      "bucket": "aws-data-lab-sanhe-text-insight-dev",
+      "lambda_arn": "arn:aws:lambda:us-east-1:669508176277:function:aws_text_insight-dev-landing_to_source"
+    },
+    {
+      "name": "source_to_text",
+      "resource_type": "lambda_function",
+      "lambda_arn": "arn:aws:lambda:us-east-1:669508176277:function:aws_text_insight-dev-source_to_text"
+    },
+    {
+      "name": "source_to_text-s3event",
+      "resource_type": "s3_event",
+      "bucket": "aws-data-lab-sanhe-text-insight-dev",
+      "lambda_arn": "arn:aws:lambda:us-east-1:669508176277:function:aws_text_insight-dev-source_to_text"
+    },
+    {
+      "name": "textract_output_to_text",
+      "resource_type": "lambda_function",
+      "lambda_arn": "arn:aws:lambda:us-east-1:669508176277:function:aws_text_insight-dev-textract_output_to_text"
+    },
+    {
+      "name": "textract_output_to_text-sns-subscription",
+      "resource_type": "sns_event",
+      "topic": "arn:aws:sns:us-east-1:669508176277:aws-text-insight-dev-textract",
+      "lambda_arn": "arn:aws:lambda:us-east-1:669508176277:function:aws_text_insight-dev-textract_output_to_text",
+      "subscription_arn": "arn:aws:sns:us-east-1:669508176277:aws-text-insight-dev-textract:4b41b3d4-d9ac-4fee-a908-699aab3bbbaa",
+      "topic_arn": "arn:aws:sns:us-east-1:669508176277:aws-text-insight-dev-textract"
+    }
+  ],
+  "schema_version": "2.0",
+  "backend": "api"
+}

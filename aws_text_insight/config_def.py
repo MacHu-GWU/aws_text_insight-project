@@ -30,6 +30,10 @@ class Configuration(AttrsClass):
     def env_name(self):
         return f"{self.project_name_slugify}-{self.stage}"
 
+    @property
+    def cf_stack_name(self):
+        return self.env_name
+
     def s3_key_source(self, etag):
         return f"{self.s3_prefix_source}/{etag}.file"
 
