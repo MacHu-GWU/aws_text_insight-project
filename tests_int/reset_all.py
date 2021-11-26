@@ -40,4 +40,4 @@ def upload_to_landing():
 
 # s3_delete_all_objects()
 # dynamodb_delete_all_item()
-# upload_to_landing()
+upload_to_landing()

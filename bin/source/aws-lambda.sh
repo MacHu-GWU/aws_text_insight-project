@@ -220,7 +220,7 @@ deploy_lbd_func_with_chalice() {
     bin_chalice="$(python "${dir_bin}/pgr/pygitrepo.py" "PATH_VENV_BIN_AWS_CHALICE")"
     aws_cli_profile_arg_lambda_deploy="$(python "${dir_bin}/pgr/pygitrepo.py" "AWS_CLI_PROFILE_ARG_LAMBDA_DEPLOY")"
 
-    python "${dir_bin}/pgr/pygitrepo_func.py" "[pygitrepo] {FORE_CYAN}Deploy lambda functions with chalice"
+    pprint "[pygitrepo] {FORE_CYAN}Deploy lambda functions with chalice"
     rm_if_exists "${dir_project_root}/app/vendor"
     mkdir_if_not_exists "${dir_project_root}/app/vendor"
     python "${dir_bin}/pgr/pygitrepo_func.py" "chalice_copy_source_to_vendor"
@@ -235,7 +235,7 @@ deploy_lbd_func_with_chalice() {
 delete_lbd_func_with_chalice() {
     bin_chalice="$(python "${dir_bin}/pgr/pygitrepo.py" "PATH_VENV_BIN_AWS_CHALICE")"
     aws_cli_profile_arg_lambda_deploy="$(python "${dir_bin}/pgr/pygitrepo.py" "AWS_CLI_PROFILE_ARG_LAMBDA_DEPLOY")"
-    python "${dir_bin}/pgr/pygitrepo_func.py" "[pygitrepo] {FORE_CYAN}Delete lambda functions"
+    pprint "[pygitrepo] {FORE_CYAN}Delete lambda functions"
     (
         cd "${dir_project_root}/app" || exit
         "${bin_chalice}" delete --profile "${aws_cli_profile_arg_lambda_deploy}"

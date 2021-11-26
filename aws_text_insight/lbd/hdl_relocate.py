@@ -17,7 +17,13 @@ traceback_msg = traceback.format_exc()
 def _handler(bucket, key, etag):
     # create an item in DynamoDB
     try:
-        file = File.get(etag)
+        File.get(etag)
+        return Response(
+            message="file has been processed already",
+            error=Error(
+                traceback="file has been processed already",
+            ),
+        ).to_dict()
     except File.DoesNotExist:
         file = File(
             etag=etag,
@@ -64,6 +70,11 @@ def _handler(bucket, key, etag):
                 ),
             ).to_dict()
         except Exception as e:
+            file.update(
+                actions=[
+                    File.state.set(FileStateEnum.s1_landing_to_source_error.value),
+                ]
+            )
             return Response(
                 message="s3 copy object failed or dynamodb update failed",
                 error=Error(
@@ -72,10 +83,9 @@ def _handler(bucket, key, etag):
             ).to_dict()
     else:
         return Response(
-            message="already did!",
-            data=dict(
-                s3_input=join_s3_uri(bucket, key),
-                s3_output=config.s3_uri_source(etag=file.etag),
+            message="file has been processed already",
+            error=Error(
+                traceback="file has been processed already",
             ),
         ).to_dict()
 
