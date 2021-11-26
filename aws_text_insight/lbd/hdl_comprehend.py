@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
 
 import json
+import logging
 import traceback
 from .event import S3PutEvent
 from .response import Response, Error
@@ -61,7 +62,7 @@ def _handler(etag):
             message="success!",
             data=dict(
                 s3_input=config.s3_uri_text(etag=etag),
-                s3_output=config.s3_uri_source(etag=etag),
+                s3_output=config.s3_uri_entity(etag=etag),
             ),
         ).to_dict()
     except:
@@ -81,4 +82,6 @@ def _handler(etag):
 def handler(event, context):
     env = S3PutEvent(**event)
     rec = env.Records[0]
-    return _handler(etag=rec.s3.object.eTag)
+    response = _handler(etag=rec.s3.object.eTag)
+    logging.info(f"response: {response}")
+    return response

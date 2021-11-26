@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-
+import logging
 import traceback
 from .event import S3PutEvent
 from .response import Response, Error
@@ -92,8 +92,10 @@ def _handler(bucket, key, etag):
 def handler(event, context):
     env = S3PutEvent(**event)
     rec = env.Records[0]
-    return _handler(
+    response = _handler(
         bucket=rec.s3.bucket.name,
         key=rec.s3.object.key,
         etag=rec.s3.object.eTag,
     )
+    logging.info(f"response: {response}")
+    return response

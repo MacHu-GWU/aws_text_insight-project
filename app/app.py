@@ -60,6 +60,7 @@ def textract_output_to_text(event: SNSEvent):
 @app.on_s3_event(
     bucket=config.s3_bucket_text,
     prefix=config.s3_prefix_text,
+    suffix="text.txt",
     events=["s3:ObjectCreated:*", ],
     name=f"text_to_entity",
 )

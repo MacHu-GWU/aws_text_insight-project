@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
-
 import json
+import logging
 import traceback
 from .event import SNSEvent, TextractEvent
 from .response import Response, Error
@@ -121,4 +121,6 @@ def handler(event, context):
     env = SNSEvent(**event)
     rec = env.Records[0]
     textract_event = TextractEvent(**json.loads(rec.Sns.Message))
-    return _handler(textract_event=textract_event)
+    response = _handler(textract_event=textract_event)
+    logging.info(f"response: {response}")
+    return response
