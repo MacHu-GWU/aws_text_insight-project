@@ -2,7 +2,7 @@
 
 from smart_open import s3
 from pathlib_mate import Path
-from aws_text_insight.app_config import config
+from aws_text_insight.config_init import config
 from aws_text_insight.boto_ses import lbd_s3_client
 
 dir_project_root = Path(__file__).parent.parent

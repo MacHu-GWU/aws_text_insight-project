@@ -16,7 +16,7 @@ class FileStateEnum(enum.Enum):
 
 class File(Model):
     class Meta:
-        table_name = "aws_text_insight_file_table"
+        table_name = None # will be decided based on current stage later
         region = "us-east-1"
         billing_mode = pynamodb.models.PAY_PER_REQUEST_BILLING_MODE
 

@@ -4,14 +4,15 @@
 import traceback
 from .event import S3PutEvent
 from .response import Response, Error
-from ..app_config import config
+from ..config_init import config
 from ..boto_ses import lbd_s3_client
-from ..dynamodb import File, FileStateEnum
+from ..dynamodb import File
+from ..fstate import FileStateEnum
 from ..helpers import join_s3_uri
 from ..ftype import FileTypeEnum, detect_file_type
 
-
 traceback_msg = traceback.format_exc()
+
 
 def _handler(bucket, key, etag):
     # create an item in DynamoDB
@@ -30,7 +31,7 @@ def _handler(bucket, key, etag):
         return Response(
             message="failed to talk to DynamoDB",
             error=Error(
-                traceback=traceback_msg.format_exc()
+                traceback=traceback.format_exc(),
             ),
         ).to_dict()
 
@@ -66,7 +67,7 @@ def _handler(bucket, key, etag):
             return Response(
                 message="s3 copy object failed or dynamodb update failed",
                 error=Error(
-                    traceback=traceback_msg.format_exc()
+                    traceback=traceback.format_exc(),
                 ),
             ).to_dict()
     else:
@@ -80,9 +81,10 @@ def _handler(bucket, key, etag):
 
 
 def handler(event, context):
-    env = S3PutEvent(**event["Records"][0])
+    env = S3PutEvent(**event)
+    rec = env.Records[0]
     return _handler(
-        bucket=env.s3.bucket.name,
-        key=env.s3.object.key,
-        etag=env.s3.object.eTag,
+        bucket=rec.s3.bucket.name,
+        key=rec.s3.object.key,
+        etag=rec.s3.object.eTag,
     )

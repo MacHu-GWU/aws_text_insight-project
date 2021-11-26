@@ -1,14 +1,17 @@
 # -*- coding: utf-8 -*-
 
 from pynamodb.connection import Connection
-from .boto_ses import aws_profile_local_dev
+from .config_init import config
+from .boto_ses import aws_profile_lbd_assume_role
 from .runtime import RuntimeEnum, current_runtime
-from .fstate import FileStateEnum, File
+from .fstate import File
+
+File.Meta.table_name = f"{config.env_name}-file-state"
 
 
 def connect_in_local_runtime() -> Connection:
     import os
-    os.environ["AWS_DEFAULT_PROFILE"] = aws_profile_local_dev
+    os.environ["AWS_DEFAULT_PROFILE"] = aws_profile_lbd_assume_role
     return Connection()
 
 

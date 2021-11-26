@@ -1,28 +1,30 @@
 # -*- coding: utf-8 -*-
 
 from pysecret import AWSSecret
-from aws_text_insight.configuration import Configuration
+from aws_text_insight.config_def import Configuration
 
 
-def config_maker(bucket, prefix, stage):
+def config_maker(stage, bucket, prefix):
     return Configuration(
-        s3_bucket_landing=bucket,
-        s3_prefix_landing=f"{prefix}/{stage}/landing",
-        s3_bucket_source=bucket,
-        s3_prefix_source=f"{prefix}/{stage}/source",
-        s3_bucket_text=bucket,
-        s3_prefix_text=f"{prefix}/{stage}/text",
-        s3_bucket_data=bucket,
-        s3_prefix_data=f"{prefix}/{stage}/data",
+        project_name="aws_text_insight",
+        stage=stage,
+        s3_bucket_landing=f"{bucket}-{stage}",
+        s3_prefix_landing=f"{prefix}/landing",
+        s3_bucket_source=f"{bucket}-{stage}",
+        s3_prefix_source=f"{prefix}/source",
+        s3_bucket_text=f"{bucket}-{stage}",
+        s3_prefix_text=f"{prefix}/text",
+        s3_bucket_data=f"{bucket}-{stage}",
+        s3_prefix_data=f"{prefix}/data",
     )
 
 
-bucket = "aws-data-lab-sanhe-for-everything"
-prefix = "poc/2021-11-24-aws_text_insight"
-stage = "prod"
+stage = "test"
+bucket = "aws-data-lab-sanhe-text-insight"
+prefix = "poc"
 param_name = f"text_insight_{stage}"
 
-config = config_maker(bucket, prefix, stage)
+config = config_maker(stage, bucket, prefix)
 aws = AWSSecret(profile_name="aws_data_lab_sanhe")
 aws.deploy_parameter_object(
     name=param_name,

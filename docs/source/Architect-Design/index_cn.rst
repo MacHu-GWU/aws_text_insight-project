@@ -39,6 +39,26 @@
 2. 触发 AWS Lambda, 将原始文件移动到被设计过的 S3 Location. 并调用 Textract 或是 Python 函数, 将文件转化为文本.
 
 
+1. 原始文件被上传到 S3 ``Landing``.
+
+    在这一步中, 原文件被上传到 S3. 如果这个上传动作是人类手动的, 那么则无法避免覆盖已存在的文件, 除非启用 S3 Object Version, 但是如果启用 Version, 会导致整个 App 的复杂程度大幅上升. 当然还可以使用一个上传代理, 上传前计算文件的 md5, 把 md5 作为 Key, 确保 S3 Key 绝对不会重复.
+
+    最终这一步我们的解决方案是, 允许用户随意上传, 也允许用上传代理. 文件一旦被上传就立刻在下一步骤的 AWS Lambda 里进行复制, 并把 md5 作为 Key 放在一个叫做 ``Source`` 的 prefix 下面.
+
+    S3 Structure::
+
+        s3://landing-bucket/prefix/filename
+
+2. 把 ``Landing`` 里的文件拷贝到 ``Source``
+
+    上传到 ``Landing`` 中的文件触发一个 Lambda Function 进行处理. 将文件拷贝到 ``Source`` 的位置, 并用 etag 作为 Key 的一部分.
+
+    S3 Structure::
+
+        s3://source-bucket/prefix/${etag}/file.dat
+
+
+
 
 - Upload to S3: ``s3://text-insight-landing-bucket/...``
 - Copy and rename the original data to: ``s3://text-insight-original-bucket/data/a1b2c3d4.dat``, data type stored in metadata.
@@ -55,3 +75,12 @@
         # merge to
         s3://text-insight-pure-text-bucket/data/a1b2c3d4/text.txt
 
+
+
+运维:
+
+我们一共分三个环境 ``dev``, ``test``, ``prod``.
+
+- 开发者在本地电脑上开发, 执行 pytest, 以及用 chalice deploy 部署, 都是: ``dev`` 环境
+- 开发者在本地电脑上执行 ``pytest``: ``test`` 环境
+- 开发者用 chalice deploy 部署:

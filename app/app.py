@@ -11,19 +11,19 @@ if "AWS_CHALICE_CLI_MODE" in os.environ:
 
     runtime.current_runtime = runtime.RuntimeEnum.lbd
 
-from aws_text_insight.app_config import config
+from aws_text_insight.config_init import config
 from aws_text_insight.lbd import (
     hdl_relocate,
 )
 
-app = Chalice(app_name="aws_text_insight")
+app = Chalice(app_name=config.project_name_slugify)
 
 
 @app.on_s3_event(
     bucket=config.s3_bucket_landing,
     prefix=config.s3_prefix_landing,
     events=["s3:ObjectCreated:*", ],
-    name="landing_to_source",
+    name=f"landing-to-source",
 )
 def landing_to_source(event: S3Event):
     return hdl_relocate.handler(event.to_dict(), event.context)

@@ -49,7 +49,7 @@ class S3(AttrsClass):
 
 
 @attr.s
-class S3PutEvent(AttrsClass):
+class S3PutRecord(AttrsClass):
     eventVersion: str = attr.ib()
     eventSource: str = attr.ib()
     awsRegion: str = attr.ib()
@@ -59,3 +59,38 @@ class S3PutEvent(AttrsClass):
     requestParameters: dict = attr.ib()
     responseElements: dict = attr.ib()
     s3: S3 = S3.ib_nested()
+
+
+@attr.s
+class S3PutEvent(AttrsClass):
+    Records: typing.List[S3PutRecord] = S3PutRecord.ib_list_of_nested()
+
+
+# --- SNS
+
+@attr.s
+class SNS(AttrsClass):
+    Type: str = attr.ib()
+    MessageId: str = attr.ib()
+    TopicArn: str = attr.ib()
+    Subject: str = attr.ib()
+    Message: str = attr.ib()
+    Timestamp: str = attr.ib()
+    SignatureVersion: str = attr.ib()
+    Signature: str = attr.ib()
+    SigningCertUrl: str = attr.ib()
+    UnsubscribeUrl: str = attr.ib()
+    MessageAttributes: dict = attr.ib()
+
+
+@attr.s
+class SNSRecord(AttrsClass):
+    EventSource: str = attr.ib()
+    EventVersion: str = attr.ib()
+    EventSubscriptionArn: str = attr.ib()
+    Sns: SNS = SNS.ib_nested()
+
+
+@attr.s
+class SNSEvent(AttrsClass):
+    Records: typing.List[SNSRecord] = SNSRecord.ib_list_of_nested()
