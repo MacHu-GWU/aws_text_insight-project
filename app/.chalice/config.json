@@ -6,7 +6,7 @@
             "iam_role_arn": "arn:aws:iam::669508176277:role/aws-text-insight-dev-lambda-execution",
             "manage_iam_role": false,
             "layers": [
-                "arn:aws:lambda:us-east-1:669508176277:layer:aws_text_insight:1"
+                "arn:aws:lambda:us-east-1:669508176277:layer:aws_text_insight:2"
             ],
             "lambda_functions": {
                 "landing_to_source": {

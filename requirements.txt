@@ -8,3 +8,5 @@ smart_open
 pysecret
 jsonpickle
 elasticsearch
+cottonformation
+configirl

@@ -73,6 +73,12 @@ class PerStageStack(cf.Stack):
         )
         self.rg2_iam_roles.add(self.iam_role_lbd)
 
+        self.output_iam_role_lbd_arn = cf.Output(
+            "IamRoleLbdArn",
+            Value=self.iam_role_lbd.rv_Arn,
+        )
+        self.rg2_iam_roles.add(self.output_iam_role_lbd_arn)
+
         self.iam_role_textract = iam.Role(
             "IamRoleForTextract",
             p_RoleName=f"{self.config.env_name}-textract",
@@ -93,6 +99,11 @@ class PerStageStack(cf.Stack):
             ],
         )
         self.rg2_iam_roles.add(self.iam_role_textract)
+        self.output_iam_role_textract_arn = cf.Output(
+            "IamRoleTextractArn",
+            Value=self.iam_role_textract.rv_Arn,
+        )
+        self.rg2_iam_roles.add(self.output_iam_role_textract_arn)
 
     def mk_rg3_sns_topic(self):
         self.rg3_sns_topic = cf.ResourceGroup("rg3_sns_topics")
@@ -123,5 +134,3 @@ class PerStageStack(cf.Stack):
         self.mk_rg1_s3_buckets()
         self.mk_rg2_iam_rols()
         self.mk_rg3_sns_topic()
-
-

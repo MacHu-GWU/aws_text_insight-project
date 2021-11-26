@@ -3,5 +3,3 @@ pathlib_mate                        # auto pep8 your code
 twine                               # make distribution archive
 wheel                               # make pre-compiled distribution package
 rich
-cottonformation
-s3fs

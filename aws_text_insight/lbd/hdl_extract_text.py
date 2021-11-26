@@ -10,9 +10,10 @@ from ..dynamodb import File
 from ..fstate import FileStateEnum
 from ..helpers import join_s3_uri
 from ..ftype import FileTypeEnum
+from ..cf.per_stage_stack import PerStageStack
 
 lbd_tx_client = lbd_boto_ses.client("textract")
-
+stack = PerStageStack(config=config)
 
 def _handler_text(etag: str, file: File, success_response: Response):
     try:
@@ -66,6 +67,16 @@ def _handler_pdf_image(etag: str, file: File, success_response: Response):
                 S3Prefix=s3_prefix_output,
             ),
             JobTag=etag,
+            NotificationChannel=dict(
+                SNSTopicArn=stack.get_output_value(
+                    boto_ses=lbd_boto_ses,
+                    output_id=stack.output_sns_topic_arn.id,
+                ),
+                RoleArn=stack.get_output_value(
+                    boto_ses=lbd_boto_ses,
+                    output_id=stack.output_iam_role_textract_arn.id,
+                ),
+            )
         )
     except:
         file.update(
