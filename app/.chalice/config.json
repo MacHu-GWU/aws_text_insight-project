@@ -18,8 +18,12 @@
                     "lambda_timeout": 10
                 },
                 "textract_output_to_text": {
-                    "lambda_memory_size": 1024,
+                    "lambda_memory_size": 512,
                     "lambda_timeout": 120
+                },
+                "text_to_entity": {
+                    "lambda_memory_size": 256,
+                    "lambda_timeout": 30
                 }
             }
         }

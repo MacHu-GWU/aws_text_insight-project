@@ -14,12 +14,12 @@ def config_maker(stage, bucket, prefix):
         s3_prefix_source=f"{prefix}/source",
         s3_bucket_text=f"{bucket}-{stage}",
         s3_prefix_text=f"{prefix}/text",
-        s3_bucket_data=f"{bucket}-{stage}",
-        s3_prefix_data=f"{prefix}/data",
+        s3_bucket_entity=f"{bucket}-{stage}",
+        s3_prefix_entity=f"{prefix}/entity",
     )
 
 
-stage = "test"
+stage = "prod"
 bucket = "aws-data-lab-sanhe-text-insight"
 prefix = "poc"
 param_name = f"text_insight_{stage}"

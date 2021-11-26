@@ -19,8 +19,8 @@ class Configuration(AttrsClass):
     s3_prefix_source: str
     s3_bucket_text: str
     s3_prefix_text: str
-    s3_bucket_data: str
-    s3_prefix_data: str
+    s3_bucket_entity: str
+    s3_prefix_entity: str
 
     @property
     def project_name_slugify(self):
@@ -46,8 +46,8 @@ class Configuration(AttrsClass):
     def s3_uri_text(self, etag):
         return join_s3_uri(self.s3_bucket_text, self.s3_key_text(etag))
 
-    def s3_key_data(self, etag):
-        return f"{self.s3_prefix_data}/{etag}.json"
+    def s3_key_entity(self, etag):
+        return f"{self.s3_prefix_entity}/{etag}.json"
 
-    def s3_uri_data(self, etag):
-        return join_s3_uri(self.s3_bucket_data, self.s3_key_data(etag))
+    def s3_uri_entity(self, etag):
+        return join_s3_uri(self.s3_bucket_entity, self.s3_key_entity(etag))

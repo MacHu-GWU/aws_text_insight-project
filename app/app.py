@@ -16,6 +16,7 @@ from aws_text_insight.lbd import (
     hdl_relocate,
     hdl_extract_text,
     hdl_merge_textract_result,
+    hdl_comprehend,
 )
 from aws_text_insight.boto_ses import lbd_boto_ses
 from aws_text_insight.cf.per_stage_stack import PerStageStack
@@ -23,6 +24,7 @@ from aws_text_insight.cf.per_stage_stack import PerStageStack
 app = Chalice(app_name=config.project_name_slugify)
 
 stack = PerStageStack(config=config)
+
 
 @app.on_s3_event(
     bucket=config.s3_bucket_landing,
@@ -35,7 +37,7 @@ def landing_to_source(event: S3Event):
 
 
 @app.on_s3_event(
-    bucket=config.s3_bucket_landing,
+    bucket=config.s3_bucket_source,
     prefix=config.s3_prefix_source,
     events=["s3:ObjectCreated:*", ],
     name=f"source_to_text",
@@ -53,3 +55,13 @@ def source_to_text(event: S3Event):
 )
 def textract_output_to_text(event: SNSEvent):
     return hdl_merge_textract_result.handler(event.to_dict(), event.context)
+
+
+@app.on_s3_event(
+    bucket=config.s3_bucket_text,
+    prefix=config.s3_prefix_text,
+    events=["s3:ObjectCreated:*", ],
+    name=f"text_to_entity",
+)
+def text_to_entity(event: S3Event):
+    return hdl_comprehend.handler(event.to_dict(), event.context)

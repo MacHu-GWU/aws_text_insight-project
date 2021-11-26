@@ -21,7 +21,7 @@ def create_template(config: Configuration) -> cf.Template:
         config.s3_bucket_landing,
         config.s3_bucket_source,
         config.s3_bucket_text,
-        config.s3_bucket_data,
+        config.s3_bucket_entity,
     ]
     s3_bucket_name_list = list(set(s3_bucket_name_list))
 

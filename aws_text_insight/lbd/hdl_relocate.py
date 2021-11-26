@@ -11,8 +11,6 @@ from ..fstate import FileStateEnum
 from ..helpers import join_s3_uri
 from ..ftype import FileTypeEnum, detect_file_type
 
-traceback_msg = traceback.format_exc()
-
 
 def _handler(bucket, key, etag):
     # create an item in DynamoDB
@@ -41,51 +39,52 @@ def _handler(bucket, key, etag):
             ),
         ).to_dict()
 
-    if file.state == FileStateEnum.s1_landing.value:
-        try:
-            file_type = detect_file_type(key)
-
-            # relocate s3 object
-            lbd_s3_client.copy_object(
-                Bucket=config.s3_bucket_source,
-                Key=config.s3_key_source(etag=file.etag),
-                CopySource=dict(
-                    Bucket=bucket,
-                    Key=key,
-                )
-            )
-            # update DynamoDB item
-            file.update(
-                actions=[
-                    File.type.set(file_type.value),
-                    File.state.set(FileStateEnum.s2_source.value),
-                ]
-            )
-
-            return Response(
-                message="success!",
-                data=dict(
-                    s3_input=join_s3_uri(bucket, key),
-                    s3_output=config.s3_uri_source(etag=file.etag),
-                ),
-            ).to_dict()
-        except Exception as e:
-            file.update(
-                actions=[
-                    File.state.set(FileStateEnum.s1_landing_to_source_error.value),
-                ]
-            )
-            return Response(
-                message="s3 copy object failed or dynamodb update failed",
-                error=Error(
-                    traceback=traceback.format_exc(),
-                ),
-            ).to_dict()
-    else:
+    if file.state != FileStateEnum.s1_landing.value:
         return Response(
-            message="file has been processed already",
+            message="not a valid state todo",
             error=Error(
-                traceback="file has been processed already",
+                traceback="not a valid state todo",
+            )
+        ).to_dict()
+
+    try:
+        file_type = detect_file_type(key)
+
+        # relocate s3 object
+        lbd_s3_client.copy_object(
+            Bucket=config.s3_bucket_source,
+            Key=config.s3_key_source(etag=file.etag),
+            CopySource=dict(
+                Bucket=bucket,
+                Key=key,
+            )
+        )
+
+        # update DynamoDB item
+        file.update(
+            actions=[
+                File.type.set(file_type.value),
+                File.state.set(FileStateEnum.s2_source.value),
+            ]
+        )
+
+        return Response(
+            message="success!",
+            data=dict(
+                s3_input=join_s3_uri(bucket, key),
+                s3_output=config.s3_uri_source(etag=file.etag),
+            ),
+        ).to_dict()
+    except Exception as e:
+        file.update(
+            actions=[
+                File.state.set(FileStateEnum.s1_landing_to_source_error.value),
+            ]
+        )
+        return Response(
+            message="s3 copy object failed or dynamodb update failed",
+            error=Error(
+                traceback=traceback.format_exc(),
             ),
         ).to_dict()
 

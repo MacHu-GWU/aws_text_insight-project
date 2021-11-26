@@ -9,6 +9,7 @@ from ..config_init import config
 from ..boto_ses import lbd_boto_ses, lbd_s3_client
 from ..dynamodb import File
 from ..fstate import FileStateEnum
+from ..helpers import join_s3_uri
 
 lbd_tx_client = lbd_boto_ses.client("textract")
 
@@ -101,6 +102,12 @@ def _handler(textract_event):
                 File.state.set(FileStateEnum.s4_text.value),
             ]
         )
+        return Response(
+            message="success!",
+            data=dict(
+                s3_output=config.s3_uri_text(etag),
+            ),
+        ).to_dict()
     except:
         return Response(
             message="failed to merge textract result",

@@ -34,7 +34,7 @@ class PerStageStack(cf.Stack):
             self.config.s3_bucket_landing,
             self.config.s3_bucket_source,
             self.config.s3_bucket_text,
-            self.config.s3_bucket_data,
+            self.config.s3_bucket_entity,
         ]
         s3_bucket_name_list = list(set(s3_bucket_name_list))
         self.s3_bucket_list: typing.List[s3.Bucket] = list()
