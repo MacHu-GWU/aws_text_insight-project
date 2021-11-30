@@ -58,10 +58,10 @@ class Configuration(AttrsClass):
         return join_s3_uri(self.s3_bucket_4_text, self.s3_key_4_text(etag))
 
     def s3_key_5_comprehend_output(self, etag):
-        return f"{self.s3_prefix_5_comprehend_output}/{etag}/jobs"
+        raise NotImplemented("This method should NOT be implemented")
 
     def s3_uri_5_comprehend_output(self, etag):
-        return join_s3_uri(self.s3_bucket_5_comprehend_output, self.s3_key_5_comprehend_output(etag))
+        raise NotImplemented("This method should NOT be implemented")
 
     def s3_key_6_entity(self, etag):
         return f"{self.s3_prefix_6_entity}/{etag}/entity.json"

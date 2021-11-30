@@ -87,11 +87,11 @@ def test_handler_image_type():
     file.refresh()
     assert file.state == FileStateEnum.s2_textract_async_invoke_processing.value
 
+    time.sleep(6) # wait a seconds for async textract
     res = lbd_s3_client.list_objects_v2(
         Bucket=config.s3_bucket_3_textract_output,
         Prefix=f"{config.s3_prefix_3_textract_output}/{etag}",
     )
-    time.sleep(6) # wait a seconds for async textract
     assert len(res.get("Contents", [])) >= 1
 
 

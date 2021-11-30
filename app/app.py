@@ -39,6 +39,7 @@ def landing_to_source(event: S3Event):
 @app.on_s3_event(
     bucket=config.s3_bucket_2_source,
     prefix=config.s3_prefix_2_source,
+    suffix="file",
     events=["s3:ObjectCreated:*", ],
     name=f"source_to_text",
 )
@@ -55,14 +56,14 @@ def source_to_text(event: S3Event):
 )
 def textract_output_to_text(event: SNSEvent):
     return hdl_3_textract_output_to_text.handler(event.to_dict(), event.context)
-#
-#
-# @app.on_s3_event(
-#     bucket=config.s3_bucket_4_text,
-#     prefix=config.s3_prefix_4_text,
-#     suffix="text.txt",
-#     events=["s3:ObjectCreated:*", ],
-#     name=f"text_to_entity",
-# )
-# def text_to_entity(event: S3Event):
-#     return hdl_comprehend.handler(event.to_dict(), event.context)
+
+
+@app.on_s3_event(
+    bucket=config.s3_bucket_4_text,
+    prefix=config.s3_prefix_4_text,
+    suffix="text.txt",
+    events=["s3:ObjectCreated:*", ],
+    name=f"text_to_entity",
+)
+def text_to_comprehend_output(event: S3Event):
+    return hdl_4_text_to_comprehend_output.handler(event.to_dict(), event.context)

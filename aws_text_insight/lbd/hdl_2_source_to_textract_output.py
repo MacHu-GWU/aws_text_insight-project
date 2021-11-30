@@ -5,14 +5,13 @@ from .event import S3PutEvent
 from .logger import logger
 from .response import Response, Error
 from ..config_init import config
-from ..boto_ses import lbd_boto_ses, lbd_s3_client
+from ..boto_ses import lbd_boto_ses, lbd_s3_client, lbd_tx_client
 from ..dynamodb import File
 from ..fstate import FileStateEnum
 from ..helpers import join_s3_uri
 from ..ftype import FileTypeEnum
 from ..cf.per_stage_stack import PerStageStack
 
-lbd_tx_client = lbd_boto_ses.client("textract")
 stack = PerStageStack(config=config)
 
 
@@ -153,8 +152,8 @@ def _handler(etag):
 def handler(event, context):
     env = S3PutEvent(**event)
     rec = env.Records[0]
-    basename = rec.s3.object.key.split("/")[-1]
-    etag = basename.split(".")[0]
+    s3_key = rec.s3.object.key
+    etag = s3_key.split("/")[-2]
     response = _handler(etag=etag)
     logger.info(f"response: {response}")
     return response
