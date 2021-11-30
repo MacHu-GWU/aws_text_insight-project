@@ -98,8 +98,8 @@ class SNSEvent(AttrsClass):
 # --- Textract
 @attr.s
 class TextractDocumentLocation(AttrsClass):
-    S3ObjectName: str = attr.ib()
     S3Bucket: str = attr.ib()
+    S3ObjectName: str = attr.ib()
 
 
 @attr.s

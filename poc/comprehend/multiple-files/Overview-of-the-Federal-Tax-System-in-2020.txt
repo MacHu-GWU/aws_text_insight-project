@@ -1,0 +1,1666 @@
+
+
+
+Monyresaional
+Research Service
+Inform in g the  legislative  deba te since 1914
+
+
+Overview of the Federal Tax System in 2020
+
+Updated November 10, 2020
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Congressional Research Service https://crsreports.congress.gov
+R45145
+
+ERS REPORT
+Prepared for &tembers and
+Cofr mMtees ol Congress
+
+                                                                                                    
+          Overview of  the  Federal  Tax Sys tern in 2020 
+
+
+Summary
+This report describes the federal tax structure and system in effect for 2020. The report also 
+provides selected statistics on the tax system as a whole. Historically, the largest component of 
+the federal tax system, in terms of revenue generated, has been the individual income tax. For 
+FY2020, an estimated $1.5 trillion,  or 47% of the federal government's revenue, will be collected 
+from the individual  income tax. The corporate income tax is estimated to generate another $151 
+billion  in revenue in  FY2020, or approximately 5% of total revenue. Social insurance or payroll 
+taxes will generate an estimated $1.3 trillion,  or 36% of revenue in FY2020. For 2019, it was 
+estimated that revenues will be 16.3% of gross domestic product (GDP), shghtly below the post- 
+World War II average of 17.2% of GDP.
+The largest source of revenue for the federal government is the individual income tax. The federal 
+individual  income tax is levied  on an individual's  taxable income, which is adjusted gross 
+income (AGI) less deductions. Tax rates based on filing status (e. g., married filing jointly,  
+head of household, or single individual)  determine the amount of tax liability.  Income tax rates 
+in the United  States are generally progressive, such that higher leveb of income are typically  
+taxed at higher rates. Once tentative tax liability  is calculated, tax credits can be used to 
+reduce tax  hability.  Tax deductions and tax credits are tools available to policymakers  to 
+increase or decrease the after-tax price of undertaking specific activities. Individuals with high 
+levels  of deductions  and credits relative to income may be required to pay the alternative 
+minimum tax (AMT).
+The federal government also levies  taxes on corporations, wage earnings, and certain other goods. 
+Corporate taxable income is subject to tax at a flat rate of 21%. Social Security and Medicare tax 
+rates are, respectively, 12.4% and 2.9% of earnings. In 2020, Social Security taxes are levied on 
+the first $137,700 of wages. Medicare taxes are assessed against all wage income. Federal excise 
+taxes are levied  on specific goods, such as transportation fuels, alcohol, and tobacco.
+Looking at the tax system as a whole, several observations can be made. Notably, the composition of 
+revenues has changed over time. Corporate income tax revenues have become a smaller share of 
+overall tax revenues over time, while social insurance revenues have trended upward as a share of 
+total revenues. Social insurance revenues are a sizable component of the overall federal tax 
+system. Most taxpayers pay more in payroll taxes than income taxes. Many taxpayers pay social 
+insurance taxes but do not pay individual  income taxes, having incomes below the amount that would 
+generate a positive income tax liability.  From an international  perspective, the U.S. federal tax 
+system tends to collect less in federal revenues as a percentage of GDP than other OECD countries.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Congressional Resea rch Service
+
+                                                                                                    
+                Overview of  the   Federal  Tax Sys tern  in 2020 
+
+
+
+Contents
+The Federal Income Tax System.                                                                      
+                           1
+The Individual Income Tax                                                                           
+                           2
+Gross Income and Adjustments.                                                                       
+               3
+Filing Status and Deductions.                                                                       
+                   4
+Tax Rates                                                                                           
+                                6
+Tax Credits.                                                                                        
+                             8
+Alternative Minimum Tax.                                                                            
+                 10
+The Corporate Income Tax.                                                                           
+                        11
+Corporate Income Earned Abroad.                                                                     
+            13
+Social Insurance and Retirement Payroll Taxes.                                                      
+             14
+Estate and Gift Taxes                                                                               
+                              16
+Excise Taxes.                                                                                       
+                                16
+Tax Statistics.                                                                                     
+                                       17
+Taxes asian Share of the Economy                                                                    
+                       17
+Composition  of Tax Revenue.                                                                        
+                      18
+The Distribution  of the Tax Burden                                                                 
+                       19
+International Comparisons                                                                           
+                           20
+Concluding  Remarks                                                                                 
+                                   22
+Figures
+Figure 1. Federal Receipts by Source: 2019 and 2020                                                 
+                   2
+Figure 2. Tax Returns Filed with Standard and Itemized Deductions, Estimates for 2017,
+2018, and 2019                                                                                      
+                                     5
+Figure 3. Visualization  of the U.S. Individual Income Tax System.                                  
+            9
+Figure 4. Share of Taxpayers with Payroll Taxes Greater Than Income Taxes and Average
+Payroll and Income Tax Rates, by Income Quintile 2020                                               
+           15
+Figure S. Federal Revenue as a Percentage of GDP, 1945-2019.                                        
+        18
+Figure 6. Composition of Federal Revenue.                                                           
+                    19
+Figure 7. Shares of Income and Individual Income Taxes by Income Level,  2019
+Projections                                                                                         
+                                       20
+Figure 8. Government Tax Revenue as a Percentage of GDP.                                            
+         21
+Tables
+Table 1. Statutory Marginal Tax Rates, 2020.                                                        
+                       7
+Table 2. Maximum Tax Rate on Long-Term Capital Gains  and Qualified  Dividends,               2020. 
+                                                                                                    
+                                     8
+Table 3. U.S. Fiscal Position Compared to Other Industrialized Nations, 2019.                       
+   21
+
+
+
+
+
+
+Cong ressi onaI Resea rch Se rvi ce
+
+                                                                                                    
+                                Overview  of  the  Federal  Tax  Sys  tern in 2020 
+
+
+
+Contacts
+Author  Informaion                                                                                  
+                                          22
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Congressional Resea rch Service
+
+                                                                                                    
+                Overview of  the   Federal  Tax Sys tern in 2020 
+
+
+
+he U.S. federal tax system includes several elements. Income taxes are the primary component, and 
+the United States has an income tax that applies  to the income of individuals  and a separate 
+income tax for corporations.  Payroll taxes are levied on earned
+income, with most of this revenue used to finance social insurance programs. The U.S. tax system
+also includes an estate and gift tax, as well as various excise taxes.
+At the end of 2017, President Trump signed into law P.L. 115-97, which substantially changed the
+U.S. federal tax system. Consequently, the federal tax system in effect for 2020 differs from what 
+was in effect for 2017.' Most of the changes to the individual income tax system in P.L. 115-97 are 
+temporary and scheduled to expire at the end of 2025. Thus, under current law, after 2025, the 
+individual  income tax system is slated to look like  the system that was in effect for 2017. In 
+contrast, many of the changes made in P.L. 115-97 affecting corporations  are permanent.
+This report provides an overview of the federal tax system, including the individual  income tax, 
+corporate income tax, payroll taxes, estate and gift taxes, and federal excise taxes, as in effect 
+for 2020. Information on changes to the tax system enacted in the 2017 tax revision (P.L. 115-97) 
+can be found in CRS Report R45092, The 2017 Tax Revision (P.L. 115-97).’  Comparison to 2017 Tax 
+Law, coordinated by Molly F. Sherlock and Donald J. Marples.
+
+The Federal Income Tax System
+The federal income tax system has several components. The largest component, in terms of revenue 
+generated, is the individual  income tax. In FY2019, the individual  income tax generated
+$1.7 trillion  in federal revenue (Figure 1). The Congressional Budget Office (CBO) has projected 
+that federal income tax revenues in FY2020 will be $1.5 trillion,  with the decline due to the 
+economic effects of and policy response to the COVID-19 pandemic. 2  In FY2019, nearly 50% of 
+federal revenue came from the individual  income tax. In FY2020, it is projected that about 47% of 
+federal revenue will be generated through the individual  income tax. Similar  to the individual 
+income tax, corporate tax revenues are expected to decline in FY2020, relative  to FY2019 levels. 
+In FY2019, corporate tax receipts were $230 billion, or nearly 7% of federal revenue. In FY2020, 
+corporate tax receipts are expected to be $151 billion,  less than 5% of federal revenue.
+The second-largest source of federal revenue is payroll taxes. In FY2019, payroll taxes generated
+$1.2 trillion  in  federal revenue (36% of the total revenue). This figure is projected to increase 
+in FY2020, to $1.3 trillion  (40% of total revenue). Receipts from other sources are also projected 
+to increase in FY2020 to $298 billion,  from $271 billion  in  FY2019 (rising to 9% of total 
+revenue from 8%).
+
+
+
+'  See  CRS  Report R45053, The Federal Tax Sy.stem for the 2017 Tax Year, by Molly F. Sherlock  
+and Donald J. Marples.
+2 Before the COVID- 19 pandemic,  the Office of Management  and Budget  estimated that for FY2020, 
+approximately
+$1 .8 trillion, or 49% of the federal government's revenue, would  come from the individual  income 
+tax. It was estimated the corporate income tax would generate another $264 billion in revenue in 
+FY2020, or just  over 7% of total revenue. Social  insurance or payroll taxes were expected 
+generate an estimated $1.3 trillion, or 35% of revenue in FY2020.
+Estimates indicate that the remainder of federal revenue collected in FY2020 was  expected to come 
+from excise taxes (3%) or other sources (6%). Other sources include  estate and gift  taxes, 
+customs duties and fees, and deposits of earnings by  the Federal  Reserve System.  Historical data 
+on federal receipts by source can be  found in T able  2.1 of the Historical Tables published  by  
+the Office of Management and Budget   (OM B), available  at 
+https://www.whitehouse.gov/omb/historical-tables/.
+3  FY20 1 9 and FY2020 data can be  found in Congressional  Budget   Office (CBO),  An Update to 
+the Budget Outlook. 2020 to 2030, September 2, 2020, available at 
+https://www.cbo.gov/publication/5651 7.
+
+
+
+Cong ressi onal  Research  Se rvi ce
+
+                                                                                                    
+                Overview of  the   Federal  Tax S/s tern in 2020 
+
+
+
+Figure  I . Federal Receipts by Source: 2019 and  2020
+
+Billions of Dollars
+
+
+$1,718
+
+
+$1,533
+m FY2019 (actual)            FY2020 (projected)
+
+$1,243
+
+
+
+
+
+
+
+230       Scsi
+
+Individual Income Taxes           Payroll Taxes           Corporate Income Taxes
+$271       $298
+
+
+
+Other
+
+
+Source: Congressional  Budget Office (CBO),  An Update  to the Budget  Out/ook:  2020  to 2030, 
+September  2, 2020, availab ie  at https://www.cbo.gov/publication/565 17.
+Notes:  CBO's  pr  iections   of FY2020 revenues  are  based  on  federal  receipts  through july 
+2020. Other receipts include excise  taxes, Federal  Reserve  deposits,  customs  duties,  estate 
+and gift taxes, and miscellaneous   fees.
+
+The  Individual Income Tax
+The individual  income tax is the largest source of revenue in the federal income tax system. Most 
+of the income reported on individual  income tax returns is wages and salaries. CBO projects that 
+in 2020, 64% of total income reported on individual  income tax returns will be from salaries and 
+wages.4 Asubstantial portion of business income in the United  States is taxed in the individual 
+income tax system. Pass-through businesses, including sole proprietorships, partnerships, S 
+corporations,  and limited liability  companies, generally pass business income through to the 
+business’s owners, where that income is taxed at individual income tax rates. 5  Projections 
+indicated that in 2020, 9% of total income reported by individual  taxpayers would be net business 
+income, including  pass-through business income, farm, or Schedule E income. 6 Another 13% of 
+taxable income is retirement-related, in the form of taxable pensions, annuities, IRAdistributions 
+or taxable Social Security Benefits. 7
+
+4 Congressional  Budget  Office (CBO),  An Update to the Budget Outlook. 2020 to 2030, September 2, 
+2020, available at https://www.cbo.gov/publication/56517. See  specifically  the “Detailed 
+Individual Income T ax Projections in CBO’s September 2020 Baseline.”
+See  CRS  Report R43104, A Brief Overview  ofBusiness Types and Their Tax Treatm cut, by Mark P. 
+Keightley.
+In addition  to business  income, Schedule  E income includes  income or losses  from rental 
+property, royalties, estates, and trusts.
+7  Congressional  Budget  Office (CBO),  An Update to the Budget Outlook. 2020 to 2030, September 
+2, 2020, available at https://www.cbo.gov/publication/56517. See  specifically  the “Detailed 
+Individual Income T ax Projections in CBO’s September  2020 Baseline.”
+Cong ressi onal  Research  Se rvi ce                                                                
+                                                                                 2
+
+                                                                                                    
+          Overvie w of the  Federal  Tax S/s tern in 2020 
+
+
+Gross Income and Adjustments
+To levy an income tax, income must first be defined. As a benchmark, economists often turn to the 
+Haig-Simons  comprehensive income definition, which can differ from the measure of income used in 
+computing a taxpayer's taxes. Under the Haig-Simons definition,  taxable resources are defined as 
+changes in a taxpayer's ability to consume during the tax year.   Using this definition  of income, 
+an employer's contributions  toward employee health insurance, for example, would be counted toward 
+the employee's income. This income, however, is not included in the employee's taxable income under 
+current tax law.
+In practice, the individual  income tax is based on gross income individuals  accrue from a variety 
+of sources. Included in the individual  income tax base are wages, salaries, tips, taxable interest 
+and dividend  income, business and farm income, realized net capital gains, income from rents, 
+royalties, trusts, estates, partnerships, and taxable pension and annuity income.
+Gross income for tax purposes excludes certain items, which may deviate from the Haig- Simmons 
+definition  of income. For example, employer-provided health insurance, pension contributions, and 
+certain other employee benefits are excluded from income subject to tax. 9 Employer  contributions  
+to Social Security are also excluded from wages. Amounts received under life insurance contracts 
+are excluded from income. Another exclusion from income is the interest received on certain state 
+and local bonds.10 Some forgiven debts and various other items are also excluded from income for 
+tax purposes.''
+There are special rules for income earned as capital gains or dividends.12  Capital gains (or 
+losses) are realized  when assets are sold.'   The tax base excludes unrealized capital gains.'4  
+There are reduced tax rates for certain capital gains and dividends  (discussed below in the “Tax 
+Rates” section).15 As with ordinary income, there may be exclusions. For example, certain capital 
+gains on sales of primary residences are excluded from income.
+Income from operating a business through a proprietorship, partnership, or small business 
+corporation that elects to be treated similarly to a partnership (Subchapter S corporation),  or 
+income from rental property, is also subject to the individual  income tax. '6 This income is the 
+net
+
+
+T he Haig-Simons comprehensive income definition was first developed  in Robert Murray  Haig, “T he 
+Concept of Income—Economic and Legal Aspects,” in  The Federal Incom e Tax, ed. Robert Murray  Haig 
+(New York, NY: Columbia  University Press, 1921), pp. 1 -28; and Henry C. Simons,  Personal Incom e 
+Taxation.’  The Defin ition of
+Incam e as a Pro blem a[Fiscal Policy (Chicago,  IL: University of Chicago  Press, 1938). An 
+overview of the concept can be  found in Jonathan Gruber,  Public Finance and Putt lie Poliey, 2‘ᵈ 
+ed. (New York, NY: Worth Publishers, 2007).
+Exclusions are a form of “tax expenditure.” T ax expenditures are revenue losses associated with  
+targeted provisions that move the income tax away from a “theoretical normal” tax system.
+10  See  CRS  Report RL30638, Tax-Exem pt Bonds. A Description of State and Local Go vernm ent 
+Debt, by Grant A. Driessen.
+11  See  CRS  In Focus  IF1 1535, The Tax Treatm ent of Canceled Mortgage Deb t, by Mark P. 
+Keightley.
+12  See  CRS  Report 96-769, Cap ital Gains Taxes. An Overview,  by Jane G.  Gravelle; and CRS  
+Report R434 18, The Taxation o(Dividends.  Background and Overview, by Jane G. Gravelle  and Mo1ly 
+F. Sherlock.
+¹³ Capital losses  are generally  deductible  against capital gains.  T axpayers can also deduct  
+up to $3,000 of capital losses from ordinary income per tax year (the deduction is limited to 
+$1,500 for married taxpayers filing separately).
+"  Unrealized capital gains are also excluded  at death. This is discussed  further in the “ Estate 
+and Gift T axes” section below.
+’   Qualified  dividends,  which  are generally  dividends  that have met certain holdin g period 
+requirements, are taxed at the same reduced  rate as capital gains.
+1'  See  CRS  Report R43104, A Brief Overview  ofBusiness Types and Their Tax Treatm ent, by Mark 
+P. Keightley.
+
+
+
+Cong ressi onal  Research  Se rvi ce                                                                
+                                                                                 3
+
+                                                                                                    
+          Overvie w of the  Federal  Tax S/s tern in 2020 
+
+
+
+of gross receipts reduced by such deductible costs as payments to labor, depreciation, costs of 
+goods acquired for resale and other inputs, interest, and taxes.
+A taxpayer's adjusted gross income (AGI), the basic measure of income under the federal income tax, 
+is determined  by subtracting “above-the-line” deductions from gross income.17 Above-the- line 
+deductions are avaihble  to taxpayers regardless of whether they itemize deductions  or claim the 
+standard deduction. Above-the-line deductions may be claimed for, among other items, contributions 
+to qualified retirement plans by self-employed individuals,  contributions  to individual  
+retirement accounts (IRAs),'8  interest paid on student loans, higher education tuition expenses, 
+and contributions  to health savings accounts.'9 Temporarily,  in 2020, there is a $300 
+above-the-line deduction for charitable contributions. 2
+
+Filing Status and Deductions
+Tax liability  depends on the filing  status of the taxpayer. There are four main filing 
+categories: married filing  jointly,  married filing  separately, head of household, and single 
+individual.  The computation of taxpayers' tax liability  depends on their filing  status, as 
+discussed further below. The amount of the standard deduction also depends on filing status. 
+Deductions are subtracted before determining taxable  income.
+Taxpayers have a choice between claiming the standard deduction or claiming the sum of their 
+itemized  deductions. The standard deduction amount depends on filing status. The 2020 standard 
+deduction for single filers is $12,400, while the standard deduction for married taxpayers filing 
+jointly  is twice that amount, or $24,800. The standard deduction for a head of household is
+$18,650. There is an additional standard deduction for the elderly (taxpayers age 65 and older) and 
+the blind.2' The standard deduction amount is indexed for inflation. 22
+When the sum of taxpayers' itemized deductions exceeds the standard deduction, taxpayers may choose 
+to itemize. Deductions may be allowed for mortgage interest2'  and charitable contributions.24  
+Taxpayers may also claim up to $10,000 ($5,000 for married taxpayers filing separately) in total 
+deductions for state and local taxes (income, sales, or property taxes). 25
+
+
+’⁷ A list of “above the line” deductions can be  found in the I nt ernal Revenue Code  (I RC) §62.
+’8 See  CRS  Report  RL343 97, Traditional and Roth Individual Retirem ent Accou nts (IRA s). A 
+Prim er, by  Elizabeth A. Myers.
+19  See  CRS  Report R45277, Health Savings Accounts (HSAs) , by Ryan  J. Rosso.
+20  See  CRS  Insight IN11420, Tern porary Enhancements to Charitable Contributions Deductions in 
+the CARES  Act, by Jane G.  Gravelle.
+21 T he additional standard deduction  for married taxpayers filingjoint ly is $1,300 per spouse 
+that is either blind or elderly  (or $2,600 if both blind and elderly). For single  and head of 
+household taxpayers, the additional standard deduction  is $1,650 (or $3,300 if both blind and 
+elderly).
+²² Beginning after 201 8, the standard deduction  will  be indexed  for in flation using the 
+Chained Consumer  Price Index (C-CP I-U). For background  information, see CRS Report R43347, 
+Budgetary and Distributional Effects ofA dopting the Chained CPI, by Donald 1. Marples.
+*³ See  CRS  In Focus  IF1 1 540, The Mortgage Interest Deduction, by Mark P. Keightley.
+24 T he Coronavirus Aid, Relief, and Economic Security (CARES1  Act (P.L. 116-136), for the 2020 
+tax year, suspends limits on certain individual cash contributions to charities and allows  a $300 
+deduction for nonitemizers. See CRS  In Focus  IF1 1022, The Charitable Deduction for Individuals, 
+by Margot L. Crandall-Hollick and Molly F. Sherlock; CRS Insight  IN 1 1420, Tern porary 
+Enhancements to Charitable Contributions Deductions in the CARES Act, by Jane G. Gravelle;  and CRS 
+ Report  R45 922, Tax Issues Relating to Charitable Contributions and Organ izatio us, by Jane G. 
+Gravelle, Donald J. Marples,  and Molly F. Sherlock. The CARES Act also relaxes limitations for 
+corporate charitable giving  in 2020.
+2’ See  CRS  Report R46246, The SALT Cap.‘ Overview  and Analysis, by Grant A. Driessen  and Joseph 
+S.  Hughes.
+Cong ressi onal  Research  Se rvi ce                                                                
+                                                                                 4
+
+                                                                                                    
+                                    Overview  of the  Federal  Tax  Sys  tern  in  2020  
+
+
+
+
+TCJA Changes in Personal Exemptions and Deductions
+The 20 17 Tax  Revision  (P.L  115 -97) substantially changed the individual income  tax  system  
+by eliminating personal  exemptions  and nearly doubling  the standard deduction.
+Before  20 18, taxpayers deducted personal  exemptions  from  their AGI  when  calculating taxable 
+income.  Personal exemptions  were  allowed  for  taxpayers, their  spouse,  and any dependents.  
+For  20 20, the personal  exemption amount would have been  $4,3 00 per  exemption,  had the  
+exemption  not  been temporarily  eliminated  in  P.L  I I S - 97.
+Standard deduction  amounts  for 20 18 would  have been  $6,500  for single  filers,   and $13,000 
+for  married taxpayers  filing  i   intly,  had P.L.   1  15 -97  not been enacted.  Nearly  
+doubling the standard deduction  meant  that fewer  taxpayers itemized  deductions. Additional  
+limitations  imp osed  on  the deduction for  state and local  taxes
+and moKgage  interest  deduction in  P.L.   I I 5-97 may have also  contributed  to fewer  
+taxpayers  claiming  these deductions.
+The  share  of taxpayers  itemizing  deductions fell  substantially  between  20 17 and 20 18, with 
+lower  itemization rates  continuing in  20  19 (see  Figure  2).For 2017, the joint  Committee   
+on Taxation  (jCT) estimated  that 48.7 million   (3 2%) tax  filers  would  itemize  deductions.  
+For  20 19, the JCT  estimated   that  I 7.9 million   ( I I %) tax  filers would  itemize  
+deductions.
+
+Figure 2.Tax Returns Filed with Standard and Itemized Deductions, Estimates
+for 20 17, 20 18,and 20 19
+
+Millions of Returns
+
+
+itenJized
+d ed uctio
+
+
+
+
+
+.                stand ard
+*                dedr ction
+
+
+
+
+2017
+2018               2019
+
+Source: CICS and joint  Committee   on  Taxation.
+
+Some deductions can only be itemized  and claimed in excess of a floor. For example, medical 
+expenses can be deducted to the extent they exceed 7.5% of AGI.°6 Casualty and theft losses 
+attributable to federally declared disasters can also be deducted in excess of 10% of AGI. 27
+
+
+26 T he Taxpayer Certainty and Disaster T ax Relief Act of 201 9, enacted as Division  Q of the 
+Further Consolidated Appropriations Act, 2020 (P.L. 11 6-94), lowered the  floor from 10% to 7.5% 
+for all taxpayers for 2019 and 2020. After 2020, under current  law, the  floor is scheduled  to 
+increase  to 10% of AGI  for  all t axpayers, but may be extended as part of “tax ext enders.”
+2’ T he Taxpayer Certainty and Disaster T ax Relief Act of 2019 (P.L. 116-94, Division Q) modified 
+the casualty  loss deduction  for losses  attributable to 2018 or 2019 disasters. The  
+modifications (1) waived the 1 0% of AGI  floor; (2) increased the $100 floor for each casualty to 
+$500; and (3) allowed  taxpayers not itemizing deductions to add  the deduction  to their standard 
+deduction.  See  CRS  Report R45864, Tax Policy and Disaster  Reco very, by  Molly  F. Sherlock  
+and Jennifer T eefy.
+Cong ressi onal  Research  Se rvi ce                                                                
+                                                                                                    
+   5
+
+                                                                                                    
+          Overvie w of the  Federal  Tax 'S/s tern in 2020 
+
+
+Deduction  for Qualified  Business  Income
+The deduction for qualified business income is also taken in determining  taxable income. 2 
+Individual taxpayers can deduct 20% of qualified business income from a partnership, S corporation, 
+or sole proprietorship. Individual taxpayers can also deduct 20% of qualified Real Estate 
+Investment Trust (REIT) dividends, publicly traded partnership income, and cooperative dividends. 
+For certain taxpayers, the deduction is subject to two limitations. First, above threshold amounts, 
+the deduction begins to phase out for income from certain services, including health, law, 
+accounting, actuarial science, performing arts, consulting, athletics, financial services, 
+brokerage services, or investing and investments management services. These threshold amounts are 
+$315,000 for married taxpayers filing joint  returns (adjusted for inflation to $326,600 in 2020), 
+and $157,500 for all other taxpayers (adjusted for inflation to $163,300 in 2020). Second, the 
+deduction is also subject to limitation  based on the taxpayer's share of wages paid and 
+depreciable assets of the associated business. Specifically, the deduction is limited to the 
+greater of 50% of W-2 wages, or 25% of W-2 wages plus 2.5% of the cost of qualified property. This 
+second limitation  phases in over the same thresholds as the fast limitation.
+
+Tax Rates
+The income tax system is designed to be progressive, with statutory marginal tax rates increasing 
+as income increases.29 At a particular statutory marginal tax rate, all individuals  subject to the 
+regular income tax, regardless of their overall level of earnings, pay the same tax rate on taxable 
+income within the bracket.'0 Once taxpayers' incomes surpass a threshold level placing them in a 
+higher marginal tax bracket, the higher marginal tax rate is only applied  on income that exceeds 
+that threshold value. In 2020, the individual  income tax system has seven marginal income tax 
+rates: 10%, 12%, 22%, 24%, 32%, 35%, and 37%.31  These marginal income tax rates are apphed to 
+taxable income to arrive at a taxpayer's gross income tax liability. 32  Threshold levels 
+associated with the rate brackets depend on filing status. Tax rates for 2020 are summarized in 
+Table 1.
+For most taxpayers, their average tax rate (individual income taxes paid divided  by income) is 
+less than their statutory tax rate. This is due to the progressive nature of the tax system, 
+coupled with a variety of tax preference items (credits, deductions, exclusions, etc.). Many 
+taxpayers, particularly lower-income taxpayers, have negative average tax rates. Refundable tax 
+credits, such as the earned income tax credit (EITC) (discussed below), can lead to negative 
+average tax rates.
+
+
+2'  See  CRS  Report R46402, The Section 199A Deduction.‘  How It Works  and Illustrative Exam 
+ples, by Gary Guenther; and CRS  In Focus  IF11122, Section 199A Deduction for Pass-through 
+Business Incom e. An Overview, by Gary Guenther.
+29 A marginal  tax rate is the tax rate on the last dollar earned  For a discussion  of various tax 
+rate metrics, see CRS Report R44787, Statutory, Average, and Effective Marginal Tax Rates in the 
+Federal Individual Incom e Tax.
+Background and Analysis, by Molly F. Sherlock.
+3’ See  CRS  Insight IN11530, The Federal Incom e Tax: How Do Marginal Incom e Tax Rates Work  in 
+2020? , by Margot
+L. Crandall-Hollick.
+31 Foi historical perspective on marginal tax rates, see CRS  Report RL34498, Individual Income Tax 
+Rates and Other Key Elem ents of the Federal Individual Incom e Tax. 1988 to 2019 Tax Years, by 
+Gary  Guenther.
+32 T ake, for example, a single taxpayer with taxable income of $50,000. T hat taxpayer would fall 
+in the 22% statutory rate bracket. However, that taxpayer's tax liability would be the sum of taxes 
+applied to income falling within  the first three brackets, the 10%, 12%, and 22% brackets. 
+Specifically,  the taxpayer would pay $987.50 (or 10%) on the first
+$9,875 in taxable income, $3,630 (or 12%) on the next $30,250 in taxable income, and $2,172.50 (or 
+22%) on the last
+$9,875 in income. T hus, the taxpayer's total tax bill would  be $6,790 on $50,000 in taxable 
+income. Even though this taxpayer is in the 22% tax bracket, their average tax rate is 13.6%.
+
+
+Congressional  Research  Service                                                                    
+                                                                    6
+
+                                                                                                    
+           Overview  of the  Federal  Tax Sys tern in 2020 
+
+
+
+Table  I . Statutory I"larginal Tax Rates, 2020
+Tax  Schedules by Filing Status
+I Carried  Filing  jointly
+
+
+If taxable income  is:
+
+$0               to           $19,750
+$19,750         to          $80,250
+$80,250         to         $ 17 I ,050
+
+Then, tax is:
+
+
+I 0% of the amount  over  $0
+$1 ,975 plus  I 2% of the amount over  $ I 9,750
+$9,235 plus 22% of the amount  over  $80,250
+
+$ 17 I ,050        to          $326,600
+$326,600        to          $4 I 4,700
+$4 I 4,700        to          $622,050
+$622,050       plus
+Single
+If taxable income  is:
+$0                to             $9,875
+$9,875          to          $40, 1 25
+$40,1 25         to           $85,525
+$85,525        to        $I 63,300
+$I 63,300       to         $207,350
+$207,350       to         $S I 8,400
+$5 I 8,400      plus  Heads  of Households
+$29,2 I I  plus 24% of the amount  over  $ 17 I ,050
+$66,543 plus 32% of the amount  over  $3 26,600
+$94,735 plus 35% of the amount  over  $4 I 4,700
+$167,3 07.50 plus 37% of the amount  over  $622,050
+
+
+Then, tax is:
+I 0% of the amount  over  $0
+$987.50 plus  I 2% of the amount  over  $9,875
+$4,6 I 7.50 plus 22% of the amount  over  $40,1 25
+$14,605.50 plus 24% of the amount  over  $85,525
+$3 3,27 I .50 plus 32% of the amount  over  $ I 63,300
+$47,3 67.50 plus 35% of the amount  over  $207,350
+$1 S 6,235 plus 37% of the amount over  $5 I 8,400
+
+If taxable income  is:
+$0              to          $14, 100
+$1 4,1 00         to           $53,700
+$53,700         to          $85,500
+Then, tax is:
+
+
+I 0%  of  th e amount  over  $0
+
+$1 ,4 1 0   plus  I 2% of the  amount  over  $14, 1 00
+$6, 162 plus 22% of the amount over  $53,700
+
+$85,500          to          $163,300
+$I 63,300      to        $207,350
+$207,350      to        $5 I 8,400
+$5 I 8,400     plus
+Source: Internal Revenue Code.
+$13, 158 plus 24% of the amount  over  $85,500
+$3 I ,830 plus 32% of the amount  over  $163,300
+$45,926 plus 35% of the amount  over  $207,350
+$154,793.50 plus 37% of the amount  over  $5 I 8,400
+Certain higher-income individuals  may be subject to the alternative  minimum tax (AMT). There are 
+two marginal tax rates under the AMT, 26% and 28%, that are apphed to an expanded income base. The 
+AMT is discussed in further detail below.
+
+Tax dates on Capital  Gains  and Dividends
+As was noted above, income earned from long-term capital gains and qualified  dividends  may be 
+taxed at lower rates. The rate on long-term capital gains and qualified  dividends  can be 0%, 15%, 
+or 20%, depending on the taxpayer's taxable income and filing  status. The rates are linked to the 
+statutory rate brackets that were in effect before P.L. 115-97 was enacted, such that the 20% rate 
+applies  to taxpayers that would have been in the 39.6% bracket (under the pre-P.L. 115-97 rate
+Cong ressi onal Research  Se rvi ce                                                                 
+                                                                       7
+
+                                                                                                    
+                Overview  of  the   Federal  Tax Sys tern in 2020 
+
+
+
+structure). Taxpayers that would have been in the 25%, 28%, 33%, and 35% tax brackets under the 
+former rate structure face a 15% tax rate on long-term capital gains and qualified  dividends, 
+whereas the rate is 0% for taxpayers that would have been in the 10% and 15% tax brackets under the 
+former rate structure. The taxable income thresholds for long-term capital gains and qualified 
+dividends  in 2020 are summarized in Table  2.
+Table 2. I"4aximum Tax Rate on Long-Term Capital Gains and Qualified Dividends, 2020
+I"larried  Filing  jointly                                              Single                      
+                       Heads  of Households
+
+Taxable  Income          Tax Rate         Taxable  Income          Tax Rate          Taxable  
+Income            Tax Rate
+
+
+Less  than $80,000                               0%       Less  than $40,000
+
+$80,000 to  $496,600                      I 5%      $40,000 to $44 I ,450
+Above  $496,600                                20%       Above  $44 I ,450 Source: Internal  
+ftevenue Code.
+
+0%      Less  than $53,600
+I S%      $53,600 to  $469,050
+20%      Above  $469,050
+0%
+l S%
+20%
+Net Investment Income
+Certain higher-income individuals  may be subject to an additional  3.8% tax on net investment 
+income. Specifically, the tax apphes  to the lesser of(1) net investment income, or (2) the amount 
+by which modified AGI exceeds fixed threshold amounts. 3^ The fixed threshold amounts are
+$250,000 for taxpayers filing jointly  and $200,000 for other filers. 34 The net-investment-income
+tax increases the maximum tax rate on capital gains and dividends  to 23.8%. The maximum rate on 
+other investment income, including interest, annuities, royalties, and rent, is 40.8%.
+
+Tax Credits
+After a taxpayer's tax hability  has been calculated, tax credits are subtracted from gross tax 
+liability  to arrive at a final tax liability  (see Figure 3). Tax credits offset tax liability on 
+a dollar- for-dollar basis. There are two different types of tax credits: refundable and 
+nonrefundable. If a tax credit is refundable, and the credit amount exceeds tax liability,  a 
+taxpayer receives the credit (or a portion of the credit) as a refund. If credits are not 
+refundable, then the credit is limited to the amount of tax liability.  In most cases, unused 
+credits cannot be carried forward to offset tax hability  in future tax years. Some credits are 
+phased out as income rises to limit or eliminate benefits for higher-income taxpayers.
+
+
+
+
+
+
+
+
+
+
+’³ Modified AGI  is AGI increased  by the amount excluded from income as foreign earned income.
+34 T he threshold amount is $1 25,000 for married taxpayers filing separate returns. These 
+threshold amounts are not adjusted  for inflation.
+Cong ressi onal  Research  Se rvi ce                                                                
+                                                                                 8
+
+
+
+
+Figure 3.Yisualization ofthe U.S.Individual Income Tax System
+
+
+
+
+
+
+
+
+
+
+
+
+05.
+
+
+J6.             08              SUBTRACT
+
+
+
+
+
+
+
+
+
+
+
+Source: This graphic was  previously  published as CRS  Infographic  IG 10020, T/ie U.S. Individual 
+income  Tax  System,  2020, by Molly  F. Sherlock.
+
+
+
+
+
+CRS-9
+
+                                                                                                    
+                Overview of  the   Federal  Tax Sys tern in 2020 
+
+
+
+Tax credits that are refundable or have a refundable portion include the earned income tax credit 
+(EITC)35 and the child tax credit (CTC). 36 The American Opportunity Tax Credit (AOTC), a tax 
+credit for tuition expenses, also has a refundable portion.3' The health insurance premium tax 
+credit is another refundable credit.'8 Temporary law enacted as part of the Coronavirus Aid, 
+Relief,  and Economic Security (CARES) Act (P.L. 116-136) created a one-time refundable tax 
+credit—the 2020 Recovery Rebate. 3
+A nonrefundable tax credit can be claimed for child and dependent care expenses. 4    There are aho 
+tax credits for other purposes, such as education.4'
+Tax credits add to the complexity of the tax system for various reasons. For one, tax credits can 
+cause effective marginal tax rates to differ from statutory marginal tax rates for many taxpayers. 
+42 For example, the earned income tax credit (EITC) phases in as income increases, reducing a 
+taxpayer's marginal tax rate. At higher income levels,  as the credit phases out, the taxpayer 
+faces  a higher marginal tax rate during that phaseout range. Thus, effective marginal tax rates 
+can be less than or greater than statutory rates. Tax credits can also pose administrative 
+challenges. 43
+
+Alternative Minimum Tax
+Individuals  may also pay tax under the alternative minimum tax (AMT). The AMT apphes  lower tax 
+rates to a broader income base. The policy goal of the AMT is to prevent certain higher- income 
+taxpayers from using the graduated personal income tax rate structure and tax preferences to avoid 
+paying sufficient amounts of taxes.44
+
+
+
+
+3’ See  CRS  Report R43805, The Earned Incom e Tax Credit (EITC).  How It Works  and Who Receives 
+It, by Margot L. Crandall-Hollick, Gene Falk, and Conor F. Boyle; CRS  Report R44057, The Earned 
+Incom e Tax Credit (EITC).  An Econom ic Analysis, by Margot L. Crandall-Hollick; CRS  Report R448 
+25, The Earned Incom e Tax Credit (EITC).’ A BriefLegi.slative Hi.story,  by Margot L. 
+Crandall-Hollick; and CRS  Report R43873, They Earned Incam e Tax Credit (EITC). Adm inistrative 
+and Com pliance Challenges, by Margot  L. Crandall-Hollick.
+36  See  CRS  Report R4 1 873, The Child Tax Credit.  Current  Law, by Margot  L. Crandall-Hollick; 
+CRS  I n  Focus IFl 1077, The Child Tax Credit, by Margot L. Crandall-Hollick; and CRS  Report R45 
+124, The Child Tax Credit. Legislative  History,  by Margot L. Crandall-Hollick.
+37  See  CRS  Report R425 61, The Am erican Opportun ity Tax Credit.  Overview, Analysis, and 
+Policy Options, by Margot
+L. Crandall-Hollick.
+³'  See  CRS  Report R44425, Health Insurance Prem rum Tax Credits and Cost-Sharing Subsidies, by 
+Bernadette Fernandez.
+3’ See  CRS  Insight  IN 1 1 282, COWD-19 and Direct Paym ents to Individuals.‘  Summary oJ!the 
+2020 Reco very Rebates/Economic Im pact Payments in the CARES Act (P.L. 1 I 6-136), by Margot L. 
+Crandall-Hollick; and CRS Insight  IN 1 1 270, COWD-19 and Direct Paym ents to Individuals.  Estim 
+ated Im pact ofReco very Rebates in H.R. 748 on Fam ily Incom es, by Conor F. Boyle and Jameson  A. 
+Carter.
+40  See  CRS  Report R44993, Child and Dependent Care Tax Benefits.  How  They Work  and Who  
+Receives Them , by Margot L. Crandall-Hollick.
+⁴¹ See  CRS  Report R41967, Higher Education Tax Benefits. Brief Overview  and Budgetary Effects, 
+by Margot L. Crandall-Hollick.
+‘2 See  CRS  Report R44787, Statutory, Average, and Effective Marginal Tax Rates in the Federal 
+Individual Incom e Tax. Backgro und and Analysis, by Molly F. Sherlock.
+43 See  CRS  Report R43 873, The Earned lncom e Tax Credit (EITC).  Adm inistrative and Com pliance 
+Challenges, by Margot L. Crandall-Hollick.
+44  See  CRS  Report R44494, The Alternative Minim um Tax for Individuals. In Brief, by Donald 1. 
+Marples.
+Cong ressi onal  Research  Se rvi ce                                                                
+                                                                               10
+
+                                                                                                    
+          Overview of  the  Federal  Tax Sys tern in 2020 
+
+
+
+To calculate the AMT, an individual  first adds back various tax items, including certain itemized 
+deductions and business tax preferences, to regular taxable income. 45 This grossed-up amount 
+becomes the income base for the AMT.
+The AMT exemption is subtracted from the AMT’s income base. For 2020, the AMT exemption  is 
+$113,400 for married taxpayers filing a joint return, $56,700 for married taxpayers filing separate 
+returns, and $72,900 for all other individual  tax filers. 46 These exemption amounts are indexed 
+for inflation.  The AMT exemption  is reduced by 25% of the amount by which a taxpayer's AMT 
+taxable income exceeds certain threshold amounts. In 2020, the AMT exemption amount begins to phase 
+out at $1,036,800 for married taxpayers filing a joint  return and $518,400 for all other 
+individual  tax filers.
+A two-tiered rate structure of 26% and 28% is assessed against AMT taxable income. 47 The taxpayer 
+compares his AMT tax liability  to his regular tax liability  and pays the greater of the two. Most 
+nonrefundable personal tax credits are allowed against the AMT. Few taxpayers are subject to the 
+individual  AMT.  For 2019, JCT estimated that roughly 200,000 tax filers paid the AMT (nearly 174 
+million  return were filed).4
+
+The  Corporate Income Tax
+The corporate income tax generally only applies  to C corporations (also known as regular 
+corporations). These corporations—named for Subchapter C of the Internal Revenue Code (IRC), which 
+details their tax treatment—are generally treated as taxable entities  separate from their 
+shareholders.49 That is, corporate income is taxed once at the corporate level according to the 
+corporate income tax system. When corporate dividend payments are made or capital gains are 
+realized,  income is taxed again at the individual-shareholder  level according to the individual  
+tax system (discussed above). In contrast, noncorporate businesses, including S corporations 50  
+and partnerships,5' pass their income through to owners who pay taxes. Collectively,  these 
+noncorporate business entities are referred to as pass-throughs. For these types of entities, 
+business income is taxed only once, at individual  income tax rates. As discussed above, taxpayers 
+may be allowed to claim a 20% deduction from certain income earned by pass-through businesses.
+
+
+"   For example, the income tax base for the AMT does not allow a deduction  for state and local 
+taxes paid.
+’⁶ Internal Revenue Service,  Internal Revenue Procedure 2019-44, November 8, 2019, available at 
+https://www.irs.gov/ pub/irs-drop/rp-19-44.pdf.
+47 T he 28% rate bracket threshold for 2019 is $97,400 for married taxpayers filing separate 
+returns and $194,800 for all other taxpayers.
+4'  Joint Committee on T axation, Overview Of The Federal Tax System As In Effect For 2i919, JCX-9- 
+19, Washington, DC, March 9, 2019.
+‘⁹ See  CRS  Report R43 104, A Brief Overview  ofBusiness Types and Their Tax Treatm ent, by Mark 
+P. Keightley.
+"   An S corporation is a closely  held corporation that elects to be treated as a pass-through 
+entity for tax purposes. S corporations are named for Subchapt er S of the IRC, which details their 
+tax treatment. By electing S corporation status, a business  is able  to combine many of the legal 
+and business  advantages of a C corporation with the tax advantages of a partnership. See CRS  
+Report R43104, A Brief Overview  ofBusiness Types and Their Tax Treatm ent, by Mark P. Keightley.
+¹ A partnership is a joint venture consisting of at least two partners organized to operate a trade 
+or business  with each partner sharing profits, losses, deductions, credits, and the like. The most 
+common partnerships include general partnerships, limit ed liability partnerships, limited 
+partnerships, publicly traded partnerships, and electing large partnerships. For more information, 
+see CRS Report R43104, A Brief Overview  ofBusiness Types and Their Tax Treatm ent, by Mark P. 
+Keightley.
+
+
+
+
+Congressional  Research  Service                                                                    
+                                                                  11
+
+                                                                                                    
+                Overview of  the   Federal  Tax Sys tern in 2020 
+
+
+
+The corporate income tax is designed as a tax on corporate profits (also known as net income). 
+Broadly  defined, corporate profit is total income minus the cost associated with generating that 
+income.52  Business expenses that may be deducted from income include employee compensations the 
+decline in  value of machines, equipment, and structures (i.e., depreciation); general supplies and 
+materials; advertising; and interest payments  (subject to certain limitations). 5' Businesses  may 
+also be allowed  100% first-year depreciation or to expense the costs of certain property.'4 The 
+corporate income tax also allows for a number of other special deductions, credits, and tax 
+preferences that reduce taxes paid by corporations. Oftentimes, these provisions are intended to 
+promote particular policy goals  (promoting charitable giving or encouraging investment in 
+renewable energy, for example). A corporation's tax liability  can be calculated as follows:
+Taxes     [(Total Income — Deductible Expenses)     Tax Rate] — Tax Credits.
+Some corporations experience net operating losses (NOLs), which occur when total income less 
+expenses is negative. 55  Under permanent law, losses arising after 2017 can generally be “carried 
+forward” indefinitely, and used to offset future tax liability.  The NOL deduction is generahy 
+limited  to 80% of taxable income. 56 Temporary law enacted as part of the Coronavirus Aid, Relief, 
+ and Economic Security (CARES) Act (P.L. 116-136) allows for NOLs generated in taxable years 
+beginning after December 31, 2017, and before January  l,  2021, to be carried back for up five 
+years and suspends the limit to 80% of taxable income for taxable years beginning before January 1, 
+2021.5'
+The corporate income tax rate is a flat 21%. Thus, tax liability  before applying  tax credits  is 
+generally  calculated as 21% of taxable income. Corporate tax liability  can be reduced by claiming 
+corporate tax credits. Credits claimed by corporations  include the research credit, 5' the low-
+
+
+
+
+
+
+
+
+
+’² T he primary components o f business income are revenues generated from the sale of goods  and 
+services.  Other income sources include  investment  income, royalties, rents, and capital gains.
+’³ T he 2017 tax revision (P.L. 115-97) limit s interest payments, with the limitation generally 
+set at 30% of adjusted taxable income. The limitation does not apply to small businesses  with 
+average gross receipts of $25 million or less or to certain regulated public  utilities. Temporary 
+law enacted as part of the Coronavirus Air   Relief, and Economic Security (CARES)  Act (P.L. 
+116-136) relaxes the limit ation t o 50% of adjusted taxable income for tax years 2019 and 2020. 
+See CRS  Insight  IN 1 1 287, Lim its on Business  Interest Deductions Under the Coronavirus Aid, 
+Relief, and Econom ic Security (CARES) Act, by  Jane G.  Gravelle.
+’⁴ See  CRS  Report RL3 1 852, The Section 179 and Section 168(k) ExpensingAllowances. Current Law 
+and Econom ic Effects, by Gary  Guenther.
+”  See  CRS  Report R46377, The Tax Treatm ent and Econom ie.s ofNet Operating Losses,  by Mark P. 
+Keightley. ’⁶ T here are special rules  for farming and insurance company losses.
+”  See  CRS  Insight IN11296, Tax Treatm ent o fNet Operating Losses  (NOLs)  in the Coronavirus 
+Aid, Relief, and Econom ic Security (CARES) Act, by Jane G.  Gravelle.
+’8 See  CRS  Report  RL3l 1 81, Research Tax Credit.  Current  Law and Poliey Issues jor the 114th 
+Congress, by Gary Guenther; and CRS  In Focus  IF1075 7, The 2017 Tax Law (P.L. 115-97) and In 
+vestm ent in Inno vation, by Gary Guenther.
+Cong ressi onal  Research  Se rvi ce                                                                
+                                                                               12
+
+                                                                                                    
+                Overview of  the   Federal  Tax Sys tern in 2020 
+
+
+
+income housing tax credit,5   certain energy credits,6   the new markets tax credit,6' the work 
+opportunity tax credit,62  and an employer credit for paid family  and medical leave. 6'
+In broad economic  terms, the base of the corporate income tax is the return to equity capital. 
+Income produced by corporate capital investment includes that produced by corporate investment of 
+borrowed funds (debt), and that produced by investment of equity, or funds provided by 
+stockholders. The deductibility of certain items makes it such that the corporate income tax apphes 
+ largely  to equity capital. Specifically,  wages are tax deductible, so labor's contribution to 
+corporate revenue is excluded from the corporate tax base. Additionahy,  profits from debt- 
+financed investment are paid out as interest, which is partially deductible. To the extent that 
+interest is deductible, the return to debt capital is excluded from the corporate tax base. Equity 
+investments are financed by retained earnings and the sale of stock. The income equity  investment 
+generates is paid out as dividends  and the capital gains that accrue as stock inc reases in value. 
+Neither form of equity income is generally deductible. Thus, the base of the corporate income tax 
+is largely the return to equity capital.
+With the base of the corporate tax being largely equity income, the flow of capital out of the 
+corporate sector and other economic adjustments probably cause the burden of the tax to spread to 
+all owners of capital: owners of unincorporated business, bondholders, and homeowners. In analyzing 
+ the incidence of the corporate tax, the Congressional Budget Office (CBO) and JCT generally  
+distribute most of the burden to owners of capita   with a smaller portion falling  on labor 
+income.64 Since owners of capital tend to be in higher income groups, and most of the corporate tax 
+burden falls on capital, the corporate tax is widely viewed as being progressive.
+
+Corporate Income Earned Abroad65
+There are a number of rules governing the taxation of foreign-source income earned by U.S. 
+corporations.  The United States has a quasiterritorial tax system (pure territorial tax systems 
+tax only income earned within a country's borders). In general, dividends received by U.S. 
+corporate shareholders  from their controlled foreign corporations (CFCs) are eligible for a 100% 
+dividends- received deduction. However, certain forms of passive or easily shifted income are taxed 
+in the year earned—under  subpart F. In addition, global intangible  low-taxed income (GILTI) is 
+taxed at 10.5%.66 Adeduction is allowed for the foreign derived intangible  income (FDII)—roughly 
+the share of intangible  income that is attributed to foreign activity.
+
+
+
+”  See  CRS  Report RS223 89, An Introduction to the Low-lncom e Housing Tax Credit, by Mark P. 
+Keightley; and CRS I n Focus  I F1 1 335, The Low-lncom e Ho using Tax Credit. Poliey Issues, by  
+Mark P. Keightley.
+⁶⁰ See  CRS  Report R43453, The Renewable Electricity  Production Tax Credit.  In Brief, by Molly 
+F. Sherlock; CRS  In Focus  IF1 0479, The Energ y Credit.  An In vestm ent Tax Credit  for 
+Renewable Energ y, by Molly F. Sherlock; and CRS  In Focus  IFl 1455, The Tax Credit %r Carbon 
+Sequestration (Section 45 Q) , by Angela C. Jones and Molly F. Sherlock. 61 See  CRS  Report 
+RL34402, New Markets  Tax Credit.‘  An Introduction , by Donald 1. Marples and Sean  Lowry.
+⁶* See  CRS  Report R43729, The Work Opportun ity Tax Credit, by Benjamin  Collins and Sarah  A. 
+Donovan .
+⁶³ T his credit is available  for wages  paid in 2018, 2019, and 2020. See  CRS  In Focus  IFl 
+1141, Em plo yer Tax Credit for Paid Fam ily and Medical Leave, by Molly F. Sherlock.
+“  See  CRS  In Focus  IF1 0742,  to    Pays the Corporate Tax?, by Jane G.  Gravelle.
+"   See  CRS  Report  R45 1 86, Issues in  International Corporate Taxation.  The 2017 Revision 
+(P.L. 115-97), by Jane G. Gravelle  and Donald J. Marples.
+⁶⁶ T he GILT I tax rate is l 0.5% in 201 8 and through 2025. After 2025, the GILT I tax rate is 
+scheduled  to increase to
+13.125%.
+
+
+
+
+Cong ressi onal  Research  Se rvi ce
+
+                                                                                                    
+                Overview of  the   Federal  Tax Sys tern in 2020 
+
+
+
+Current law also contains a general antiabuse provision whose focus is primarily on U.S. 
+subsidiaries of foreign parents, although it apphes  in general to all related parties. Unlike  
+Subpart F or the GILTI provision, the base erosion and antiavoidance tax (BEAf)  is not aimed at
+including  income but at disallowing deductions for certain “base erosion” payments made by U.S. 
+parents to their foreign subsidiaries that historically  have been used to shift profits out of the 
+United  States. BEAf  imposes a minimum tax which is equal to 10%, in 2020, of the sum of taxable 
+income and base erosion payments on corporations with average annual gross receipts of at least 
+$500 million  over the past three tax years and with deductions attributable to outbound payments 
+exceeding 3% of overall deductions. 67
+
+Social Insurance and Retirement Payroll Taxes
+Payroll taxes are used to fund specific programs, largely Social Security and Medicare. 68  Social 
+Security and Medicare taxes are generally  paid  at a combined rate of 15.3% of wages, with 7.65% 
+being paid by the employee and employer alike. 69
+The Social Security part of the tax, or the old age, survivors, and disability insurance (OASDI) 
+tax, is 6.2% for both employees and employers (12.4% in total). 70 In 2020, the tax applies to the 
+first $137,700 in wages. This wage base is adjusted annuahy for inflation.
+The Medicare portion of the tax, or the Medicare hospital insurance (HI) tax, is 1.45% for both 
+employees and employers (2.9% in total).'1 There is no wage cap for the HI tax (the Medicare HI tax 
+applies  to all wage earnings). Certain higher-income taxpayers may be subject to an additional Hl 
+tax of 0.9%. For married taxpayers filing jointly,  combined wages above $250,000 are subject to 
+the additional  0.9% HI tax. 72 The threshold for single and head of household filers is $200,000. 
+These threshold amounts are not indexed for inflation.
+Employers may also be subject to a federal unemployment insurance payroll tax. 73  This tax is 0.6% 
+on the first $7,000 of wages.74  Federal unemployment insurance payroll taxes are used to pay for 
+the administrative costs of the unemployment insurance (UI) program. State UI taxes generally  pay 
+for UI benefits. 75
+Most taxpayers pay more in payroll taxes than income taxes. For 2020, the Tax Policy Center 
+estimates that 66% of tax filing  units will have a payroll tax hability  that exceeds income tax 
+hability.'6   Taxpayers closer to the top of the income distribution are more likely  to have an 
+income tax liability  that exceeds payroll tax liability  (see Figure 4).
+
+
+'⁷ T he BEAT  tax rate increased from 5% in 201 8 to 1 0% in 2019, and is scheduled  to increase to 
+12.5 % after 2025.
+6'  T he taxes are also known as Federal  Insurance Contributions Act (FI CA) taxes.
+69 Self-employed t axpayers pay both the employer and employee share.
+70  See  CRS  Report R42035, Social Security Prim er, by Dawn  Nuschler.
+71  See  CRS  Report R40425, Medicare Prim er, coordinated by Patricia A. Davis.
+72  T he threshold amount for married taxpayers filing separately is $125,000.
+”  See  CRS  In Focus  IF1 0336, The Fundam entals of Unem ployment Compensation , by Julie M. 
+Whittaker and Kat elin
+P. Isaacs; and CRS  Report R44527, Unem ployment Com pensation. The Fundamentals obthe Federal Unem 
+plo ym ent Tax (FUTA), by Julie  M. Whittaker.
+’⁴ T he tax rate is 6% of total wages for each employee, up to $7,000. However, there is a  federal 
+credit of 5.4% for state unemployment  taxes, making the effective federal tax rate 0.6%.
+7’ See  CRS  Report  RL33362, Unem ployment Insurance.  Programs and Benefits, by Julie M. 
+Whittaker and Kat elin  P. Isaacs.
+76 T ax Policy Center, T20-0096 - Distrib ution oJ'Federal Payro 11 and lncom e Taxes by Expanded 
+Cash lncom e Level,
+Cong ressi onal  Research  Se rvi ce                                                                
+                                                                               14
+
+                                                                                                    
+                Overview of  the   Federal  Tax Sys tern in 2020 
+Figure 4. Share of Taxpay'ers with Pay'roll Taxes Greater Than Income Taxes and Average Payroll and 
+Income Tax Rates, by Income Quintile 2020
+
+Share of Taxpayers  with Payroll Taxes Greater than Income Taxes
+80                    71           73           71
+70      63
+60
+50                                            44
+40
+30
+20
+10
+
+
+Lowest                Second                 Thi rd
+
+
+Average Income and Payroll Tax Rates
+20
+Fourfh
+H ig hest
+
+
+15
+
+10
+
+
+
+
+
+
+
+—10
+Income   ■ Payrol I
+
+
+6.9
+
+
+
+
+
+
+
+
+
+Lowest              Second
+
+
+
+
+
+
+2 7
+
+
+
+
+
+
+
+Third
+
+
+
+
+5 6
+
+
+
+
+
+
+
+
+Fourth
+
+
+
+
+59
+
+
+
+
+
+
+
+
+H ig hest
+
+Source: CRS graphic  using  Tax  Policy  Center  Data.
+Notes:  Income  q uintile  breaks  are  20% at $25,800, 40% at $S 1,500, 60% at $92,700, an d 80% 
+at $1 67,600 in 20 19 dollars.  Income grou ps are determined   using expan ded cash  income.
+
+Most low- and middle-income taxpayers pay more in payroll taxes than in income taxes. 77 The 
+average payroll tax rate across all taxpayers is estimated to be 6.9% for 2020. The average rate is 
+higher in the middle  of the income distribution, and lower at the top of the income distribution.
+The lower average payroll tax rate at the top of the income distribution  is largely  a consequence 
+of the wage base limit  for the OASDI tax. Average income tax rates, in contrast, increase across 
+the income distribution. Refundable tax credits (discussed above) result in negative average
+
+
+2020, March 17, 2020, available at 
+https://www.taxpo1icycenter.org/mode1-estimates/distribution-federal-payroll-and- 
+income-taxes-march-2020/t20-0096-distribution.
+77  T ax Policy Center, T20-0103 - Distrib ution ofFederal Payro 11 and Incom e Taxes by Expanded 
+Cash Incom e percentile,  2020, March 17, 2020, available at 
+https://www.taxpolicycenter.org/model-estimates/distribution-federal- 
+payroll-and-income-taxes-march-2020/t20-0103-distribution.
+
+
+
+
+Cong ressi onal  Research  Se rvi ce
+
+                                                                                                    
+                Overview of  the   Federal  Tax Sys tern in 2020 
+
+
+
+income tax rates in the lowest two income quintiles. Only in  the highest quintile  does the 
+average income tax rate exceed the average payroll  tax rate (see Figure 4).
+
+Estate and Gift Taxes
+Upon death, an individual's  estate may be subject to tax.'8  The base of the federal estate tax is 
+generally  property transferred at death, less allowable deductions and exemptions. An unlimited 
+marital deduction is allowed for property transferred to a surviving spouse. Other allowable 
+deductions include estate administration expenses and charitable bequests. The effective estate tax 
+exemption  is $11.58 million  for 2020. 79 The value of the estate over the exemption amount is 
+generally  taxed at a rate of 40%.  0
+The federal gift tax operates alongside the estate tax to prevent individuals  from avoiding the 
+estate tax by transferring property to heirs before dying. For 2020, the first $15,000 of gifts 
+from one individual  to another is excluded from taxation and does not apply to the lifetime
+exemption.  l  Any amount over this annual exclusion lowers the effective lifetime estate tax 
+exemption.
+The gift tax and estate tax are unified in  that the same lifetime  exemption amount apphes  to 
+both taxes ($11.58 million  in 2020). Being  unified, taxable gifts reduce the exemption amount 
+that is available  for estate tax purposes. The gift tax rate is 40%, the same as the top rate for 
+the estate tax, for gifts beyond the exemption amount.
+Few taxpayers pay the estate tax. Through 2025, an estimated 0.06% of decedents will pay the estate 
+tax.'2 The estate tax is also progressive, up to the very top of the income distribution.  For 
+taxpayers in the 95'h to 99th percentile, the estate tax has been estimated to be 0. 2% of cash 
+income in 2020.    For taxpayers in the top 1% and top 0.1% of the income distribution,  the estate 
+tax has been estimated to be 0.3% of cash income in 2020.
+
+Excise Taxes
+Excise taxes are levied  on the consumption of goods and services rather than income. Unlike  sales 
+taxes, they apply to particular commodities,  rather than to broad categories. Historically, the 
+federal government has levied excise taxes, but not a broad-based sales tax, instead leaving sales 
+taxes to the states as a revenue source.
+
+
+
+7'  See  CRS  Report R4295 9, Recent Change s in the Estate and Gift Tax Provisions, by Jane G. 
+Gravelle.
+”  Although estate tax rates are graduated  the exemption is applied in the form of a credit and 
+offsets taxes applied at the lower  rates.
+80 T he exemption amount is adjusted  for in flation. For the most recent exemption  level, see 
+https://www.irs.gov/ businesses/small-businesses-self-employed/estate-tax.
+81 A married couple could  each give a child $15,000 for a total gift of $30,000. This $30,000 in 
+gifts would  not apply to the lifetime exemption. Gifts can also be  made to more than one child. T 
+he exemption amount is indexed for inflation   in $1,000 increments.
+82 T ax Policy Center, TI 7-0308 - Estate Tax Returns and Liability Under Current Law and the House 
+and Senate Versions  of the Tax Cuts and Jobs Act, 2018-2027, December 6, 201 7, available at 
+http://www.taxpolicycenter.org/ model-estimates/estate-tax-and-tax-cuts-and-jobs-act-dec-20 I 7/t 
+17-0308-estate-tax-returns-and.
+'³ T ax Policy Center, T20-0039—Average Efl°ective Federal Tax Rates—All Tax Units,  By Expanded 
+Cash Incom e Percentile,  2020, February 26, 2020, available at 
+https://www.taxpolicycenter.org/model-estimates/baseline-share- 
+federal-taxes-february-2020/t20-0039-average-effective-federal-tax.
+Cong ressi onal  Research  Se rvi ce                                                                
+                                                                               16
+
+                                                                                                    
+                Overview of  the   Federal  Tax Sys tern in 2020 
+
+
+
+Federal excise taxes are levied on a variety of products. The collection point of the tax varies 
+across products. For some goods, taxes are collected at the production level. Other excise taxes 
+are collected on retail sales. In terms of receipts, the single largest tax is the excise tax on 
+gasoline.  4  Other prominent excise taxes are those on diesel and other fuels; trucks, trailers, 
+and tractors; aviation-related taxes and fees;  5  excise taxes on beer, wine, and distilled 
+spirits; 86  taxes on tobacco products; Affordable Care Act (ACA)  taxes and fees'7 (e.g., 
+insurance provider fee," branded pharmaceuticals fee); and taxes on firearms and ammunition.
+Most federal excise taxes are paid into federal trust funds devoted to specific federal activities, 
+as opposed to remaining in the federal budget’s general fund. Estimates for 2020 indicate that of 
+the
+$95 billion  in anticipated excise tax revenue, approximately  68% will support trust funds, with 
+the remainder being general fund revenue. 90 The largest trust fund is the Highway Trust Fund. 
+Devoted revenue sources include excise taxes on fuels, trucks, and tires. Aviation-related excise 
+taxes support the Airport and Airway Trust Fund, the second-largest of the excise-tax-supported 
+trust funds.  ' General fund excise taxes include taxes on alcohol and tobacco and ACA-related 
+excise taxes.
+Excise taxes can result in consumers paying higher prices for goods and services. Overall, 
+households from the lower part of the income distribution tend to pay a larger share of their 
+income in excise taxes than higher-income households.  2  Thus, taken as a whole, federal excise 
+taxes are generally  believed  to be regressive. The degree of regressivity can vary for different 
+types of excise taxes. For example, tobacco excise taxes are estimated to be more regressive than 
+aviation-related excise taxes. 9'
+
+Tax Statistics
+Taxes as a Share of the  Economy
+Federal revenues are derived from several sources and have collectively ranged from roughly 
+one-fifth to one-seventh the size of the economy. Figure 5 displays total federal tax revenues and
+major sources of federal tax revenue as percentages of gross domestic product (GDP) since 1945.
+
+
+84 Congressional  Budget  Office,  Revenue Projections, by Category, August  2019, available at 
+https://www.cbo.gov/ about/products/budget -economic-data#3.
+"   See  CRS  Report R44749, The Airport and Airway  Trust  Fund (AATF). An Overview, by Rachel Y. 
+Tang and Bart Elias.
+"   See  CRS  Report  R43350, Alcohol Excise Taxes.‘ Current  Law and Econom ic Analysis, by Sean  
+Lowry.
+87 See  CRS  In Focus  IF1 0591, Taxes and Fees Enacted as Part ofthe  Affordab le Care  Act, by 
+Sean  Lowry.
+'8 See  CRS  Report R43 225, Patient Protection and AfJ°ordab le Care Act.  Annual Fee on Health 
+Insurers, by Suzanne
+M. Kirchhoff.
+89 See  CRS  Report R45 123, Guns, Excise Taxes, Wildlife  Restoration, and the National Firearms 
+Act, by R.  Eliot Craft on, Jane G.  Gravelle, and William  J. Krouse.
+90  Office of Management  and Budget,  Historical T ables, T able 2.4, available  at 
+https://www.whitehouse.gov/omb/ budget/Historicals.
+¹ See  CRS  Report R44749, The Airport and Airway Trust  Fund (AATF). An Overview, by Rachel Y. 
+Tang and Bart Elias.
+92 T ax Policy Center Briefing Book, “Who Bears the Burden  of Federal  Excise T axes?” available 
+at http://www.taxpolicycenter.org/briefing-book/who-bears-burden-federal-excise-taxes.T he 
+distribution of federal excise taxes is estimated for the 2018 tax year.
+93 Ibid.
+
+
+Cong ressi onal  Research  Se rvi ce                                                                
+                                                                               17
+
+                                                                                                    
+                Overview of  the   Federal  Tax Sys tern in 2020 
+
+
+
+For 2019, it was estimated that revenues would be 16.7% of GDP, slightly below the post-World War 
+II average of 17.2% of GDP.
+Since the mid-1940s, the individual  income tax has been the largest single source of federal 
+revenue (business income may also be taxed under the individual  income tax system, as previously 
+discussed in “The Individual Income Tax”). Between 2000 and 2010, however, the individual  income 
+tax receipts decreased relative to the size of the economy, falling from nearly 10% of GDP in 2000 
+to just over 6% in 2010. Individual  income tax receipts have subsequently increased to 8% of GDP 
+in 2019. Over time, the corporate income tax has fallen from the second- to the third-largest 
+source of revenue. In the late 1960s, corporate taxes were replaced by social insurance and 
+retirement taxes as the second-leading revenue source. Corporate receipts as a share of GDP have 
+fallen  further in recent years. Excise taxes have also decreased as a share of GDP over time.
+Figure S. Federal Revenue as a Percentage of GDP, I 945-20 19
+Percentage of GDP
+10%
+
+9%
+
+
+7%
+
+6%
+Social  I     urance and  Retire stent Taxes
+5%
+4%
+
+Corporate  I nconJe Taxes
+2%
+
+
+0%
+
+
+
+
+Source: CICS calculations  using  data from U.S.  Office  of Management  and Budget, Budget  o{tfie 
+U.S.  Government
+Fiscal  Year  202 I,  Historica/  Tables  (Washington:  GPO,  2020).
+
+Composition of Tax Revenue
+The changing shares of federal revenues over time are more clearly shown in Figure 6. For example, 
+the corporate income tax accounted for roughly 28% of federal revenue in 1949, but less than 7% in 
+2019.  4  Excise tax revenue was roughly 3% of federal receipts in 2019, down from 19% in 1949. In 
+contrast, receipts for social insurance and retirement taxes have risen post-
+
+9‘ See  CRS  Report  R421 13, Reasons for the Decline in Corporate Tax  Revenues, by  Mark  P. 
+Keightley. Historical data on federal  receipts by source can  be found in  T able 2.1 of the 
+Historical Tables published  by the Office of Management and Budget  (OMB), available  at 
+https://www.whitehouse.gov/omb/historical-tables/.
+Cong ressi onal  Research  Se rvi ce                                                                
+                                                                               18
+
+                                                                                                    
+          Overview of  the  Federal  Tax Sys tern in 2020 
+
+
+
+World War II with the enactment of Social Security and Medicare and are now the second-largest 
+source of federal receipts at approximately 36% of federal revenue.
+Figure 6. Composition of Federal Revenue
+(Selected Years  I 949-20 I9)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Source: CRS calculations  using  data from U.S.  Office  of Management  and Budget, Budget  o{the 
+U.S.  ‹Sovernmen
+Fisco/  Year  202 I,  Historical  Tables  (Washington: GPO,  2020).
+
+The Distribution of the Tax Burden
+The U.S. individual  income tax system is generally  progressive. As shown in Figure 7, taxpayers 
+with lower incomes tend to have a proportionally smaller share of the overah individual  income tax 
+burden. JCT projections indicate that in 2019, taxpayers in lower income categories, on average, 
+had a negative share of individual  income taxes.    Thus, on average, these groups receive more in 
+refundable tax benefits than they pay in federal individual  income taxes. 96  For taxpayers in 
+income groups above $200,000, projections for 2019 show that their share of taxes paid exceeds 
+their share of income earned. About 50% of taxpayers fall into an income category below
+$50,000. In contrast, just over 7% of filers fall into an income category above $200,000. Since 
+higher-income taxpayers pay a larger share of income taxes relative to their share of income, the
+
+
+”  Projections of the distribution of income and income taxes in 2019 can be found in T able A -8 
+of Joint Committee on T axation, Overview Oj The Federal Tax System  As  In E]ject For 201 9, 
+JCX-9- 19, Washington, DC, March 20, 2019.   96  Refundable  tax benefits are the primary mechanism 
+in the tax code that can reduce poverty. See CRS  Report
+R45 971, The Im pact ofthe Federal Incom e Tax Code on Po v erty, by Margot L. Crandall-Hollick, 
+Gene Falk, and
+Jameson  A. Carter.
+
+
+
+
+Cong ressi onal  Research  Se rvi ce                                                                
+                                                                               19
+
+                                                                                                    
+                Overview of  the   Federal  Tax Sys tern  in 2020 
+
+
+
+system is generally progressive, and causes after-tax income to be more equally distributed than 
+before-tax income.
+The tax system as a whole is progressive, but not as progressive as the individual income tax 
+system. Payroll taxes and excise taxes tend to be regressive, with higher average tax rates paid by 
+taxpayers in lower income groups. Thus, taken together in evaluating the federal tax system as a 
+whole, payroll taxes and excise taxes offset some of the progressivity of the individual  income
+taxp9d
+
+
+
+
+
+40%
+35%
+30%
+25%
+2
+1
+1
+
+
+
+-5%
+Figure 7. Shares of Income  and Individual Income Taxes by Income Level, 20 19 Projections
+
+
+
+Share  of  Inc once         M S here  of  Ind ivid ual  Inco the Taxe s
+
+
+
+Income  Level
+
+Source: CRS andjoint  Committee   on  Taxation  (jCT).
+Notes:  The income  concept  used  by JCT  is  AGI  adjusted  to  more  closely   measure  cash  
+income.
+
+International Comparisons
+How the U.S. tax system compares to those in other countries is a perennial tax policy question. 
+Figure 8 shows revenue as a percentage of GDP for OECD countries. The average over the 1987- 2018 
+time period is shown, inside the band illustrating  the high and low for the period. Total U.S. 
+taxes as a percentage of GDP have historically  been below the average for OECD countries.
+Four countries have tended to have lower taxes as a percentage of GDP than the United States,
+with most others tending to have higher taxes relative to the size of the economy. Note that such a 
+direct comparison can be difficult to interpret, as it does not take into account government 
+spending that reflects each country's policy preferences or deficit/surplus levels that provide 
+more context.
+
+
+
+97  Congressional  Budget  Office,  The Distribution  oJ°Househo ld Incom e, 2016,October 2020, 
+available at https://www.cbo.gov/publication/56575.
+98 Organisation for Economic Co-operation and Development,  Revenue Statistics 2019, Tax Revenue 
+Trends in the OECD, December  5, 2019.
+Cong ressi onal  Research  Se rvi ce                                                                
+                                                                               20
+
+                                                                                                    
+                            Overview  of the  Federal  Tax  Sys  tern  in 2020 
+
+
+
+Figure 8. Government Tax Revenue asa    Percentage of GDP
+OECD Countries,  I 987-20 18
+
+Percentage of GDP
+
+
+45
+40
+35
+30
+25
+20
+15
+10
+
+
+
+
+
+
+
+
+Source: OECD  Revenue Statistics.
+Note:  Government  revenue  inclu des all  federal,  state, and local  tax  collections.  The  bars 
+ for each  country illustrate  the range over  the  1987 through 20 18 time  period  (range 
+spanning from  high to  low).
+Table 3 provides this additional  context for the United States and the other major democratic 
+countries in the G-7. Among the G-7 countries, the United States has both the lowest revenue and 
+spending as a percentage of GDP and the highest deficit level in 2020. 99
+Table 3. U.S. Fiscal Position Compared to Other Industrialized Nations, 20 1 9
+
+Government  Revenues  as       Government  Expenditures       Surplus/Deficit  asa    % of a    % 
+of  GDP                                   asa    % of GDP                                           
+      GDP
+
+Canada France Germany
+
+Japan
+United  Kingdom United  States
+40.7
+52. I
+44.9
+47. I 36.I 39.0 3 I .4
+40.9
+54.4
+44.2
+50.0
+38.2
+4 I .0
+38. I
+-0.2
+-2.3
+0.8
+-2.9
+2.0
+2.0
+6.7
+Source: OECD  Economic  Outlook  Annex  Tables.
+Note:  Government  revenue  and expenditures includes  all federal,  state, and local collections   
+(tax and nontax) and spending.
+
+
+”  T he relatively low level of revenue collections in the United States may be  part ially 
+explained by  the lack of a federal-level  consumption tax (like a Value-Added  T ax), which is a 
+feature of the other countries’ tax systems. Similarly,  the level of government spending may be  
+partially explained by the lack  of federal provision of heal th care that occurs in the other G-7 
+countries.
+Cong ressi onal  Research  Se rvi ce                                                                
+                                                                               21
+
+                                                                                                    
+                Overview of  the   Federal  Tax Sys tern in 2020 
+
+
+
+Concluding Remarks
+The U.S. federal tax system in 2020 looks substantively different than it did in 2017. The changes 
+enacted in P.L. 115-97 affected most parts of the tax system. Over the longer term, as tax pohcies 
+that were temporary in P.L. 115-97 expire, and delayed tax policies  begin to phase in, Congress 
+may choose to consider whether expirations,  phase-ins, or other delayed pohcies in P.L. 115-97 
+should be modified.
+This report provides an overview of the federal tax system, as in effect in 2020. Information on 
+taxes relative to the size of the economy, the distribution of the tax burden, and how the U.S. tax 
+system compares to tax systems globally may provide context for consideration of future tax policy 
+changes.
+
+
+Author Information
+
+
+Molly F. Sherlock Specialist in Public Finance
+Donald J. Marples Specialist in Public Finance
+
+
+
+Acknowledgments
+Joseph S. Hughes, Research Assistant, assisted in preparing and updating this report.
+
+
+Disclaimer
+This document was prepared by the CongressionalRes earch Service(CRS). CRS serves as nonpartisan 
+shared staff to congressional committees and Members of Congress. It operates solely at 
+thebehestofand under the direction of Congress. Information in a CRS Report should not be relied 
+upon for purposes other than public understanding of information that has been provided by CRS to 
+Members of Congress in connection with CRS's institutionalrole. CRS Reports, as a work of the 
+United States Government, are not subject to copyright protection in the United States. Any CRS 
+Report may be reproduced and distributed in its entirety without permission from CRS. However, as a 
+CRS Report may include copyrighted images or material from a third party, you may need to obtain 
+the permission of the copyright holder ifyou wish to copy or otherwise use copyrighted material.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Cong ressi onal  Research  Se rvi ce                     R45 145 - VERSION 10 - UPDATED             
+                                                                    22

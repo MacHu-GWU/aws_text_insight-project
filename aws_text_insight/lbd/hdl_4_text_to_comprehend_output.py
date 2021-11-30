@@ -9,6 +9,7 @@ from ..config_init import config
 from ..boto_ses import lbd_s3_client, lbd_ch_client
 from ..dynamodb import File
 from ..fstate import FileStateEnum
+from ..ftype import FileTypeEnum
 
 
 def _handler(etag):
@@ -33,8 +34,8 @@ def _handler(etag):
     try:
         # read text data
         get_obj_response = lbd_s3_client.get_object(
-            Bucket=config.s3_bucket_text,
-            Key=config.s3_key_text(etag=etag)
+            Bucket=config.s3_bucket_4_text,
+            Key=config.s3_key_4_text(etag=etag)
         )
         text = get_obj_response["Body"].read().decode("utf-8")
 
@@ -46,29 +47,29 @@ def _handler(etag):
 
         # write entity to s3
         lbd_s3_client.put_object(
-            Bucket=config.s3_bucket_entity,
-            Key=config.s3_key_entity(etag=etag),
+            Bucket=config.s3_bucket_6_entity,
+            Key=config.s3_key_6_entity(etag=etag),
             Body=json.dumps(detect_entity_response)
         )
 
         # update dynamodb
         file.update(
             actions=[
-                File.state.set(FileStateEnum.s5_data.value),
+                File.state.set(FileStateEnum.s5_comprehend_output.value),
             ]
         )
 
         return Response(
             message="success!",
             data=dict(
-                s3_input=config.s3_uri_text(etag=etag),
-                s3_output=config.s3_uri_entity(etag=etag),
+                s3_input=config.s3_uri_4_text(etag=etag),
+                s3_output=config.s3_uri_6_entity(etag=etag),
             ),
         ).to_dict()
     except:
         file.update(
             actions=[
-                File.state.set(FileStateEnum.s4_text_to_data_error.value),
+                File.state.set(FileStateEnum.s4_comprehend_async_invoke_failed.value),
             ]
         )
         return Response(
@@ -82,6 +83,8 @@ def _handler(etag):
 def handler(event, context):
     env = S3PutEvent(**event)
     rec = env.Records[0]
-    response = _handler(etag=rec.s3.object.eTag)
+    s3_key = rec.s3.object.key
+    etag = s3_key.split("/")[-2]
+    response = _handler(etag=etag)
     logger.info(f"response: {response}")
     return response

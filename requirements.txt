@@ -2,11 +2,10 @@
 chalice
 boto3
 attrs
-attrs_mate
-pynamodb
-smart_open
-pysecret
+attrs_mate==1.0.0
+pynamodb==5.1.0
+smart_open==5.2.1
+pysecret==1.0.1
 jsonpickle
-elasticsearch
-cottonformation
-configirl
+cottonformation==0.0.4
+opensearch-py==1.0.0

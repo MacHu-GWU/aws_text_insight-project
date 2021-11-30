@@ -7,20 +7,39 @@ from aws_text_insight.tests.files import EtagEnum
 
 cp_client = lbd_boto_ses.client("comprehend")
 
-etag = EtagEnum.lease_png.value
-res = lbd_s3_client.get_object(
-    Bucket=config.s3_bucket_text,
-    Key=config.s3_key_text(etag=etag)
-)
-text = res["Body"].read().decode("utf-8")
-res = cp_client.detect_entities(
-    Text=text,
-    LanguageCode="en",
-)
 
-# print(json.dumps(res, indent=4))
-for entity in res.get("Entities", []):
-    print(entity)
+
+# response = cp_client.start_entities_detection_job(
+#     InputDataConfig=dict(
+#         S3Uri="s3://aws-data-lab-sanhe-text-insight-dev/poc/text/afd4302598137788f89c5fef09deb561/text.txt",
+#         InputFormat="ONE_DOC_PER_FILE",
+#     ),
+#     OutputDataConfig=dict(
+#         S3Uri="s3://aws-data-lab-sanhe-text-insight-dev/test1.txt"
+#     ),
+#     DataAccessRoleArn="arn:aws:iam::669508176277:role/aws-text-insight-dev-comprehend",
+#     LanguageCode="en",
+# )
+# print(response)
+# data = {'JobId': '72b42e038eb277c16f16af783a2ec525', 'JobStatus': 'SUBMITTED', 'ResponseMetadata': {'RequestId': 'e38dd654-2e0a-4aca-9a64-3d9db3d1b59c', 'HTTPStatusCode': 200, 'HTTPHeaders': {'x-amzn-requestid': 'e38dd654-2e0a-4aca-9a64-3d9db3d1b59c', 'content-type': 'application/x-amz-json-1.1', 'content-length': '177', 'date': 'Fri, 26 Nov 2021 19:56:56 GMT'}, 'RetryAttempts': 0}}
+#
+# res = cp_client.describe_entities_detection_job(JobId="72b42e038eb277c16f16af783a2ec525")
+# print(res)
+
+# etag = EtagEnum.lease_png.value
+# res = lbd_s3_client.get_object(
+#     Bucket=config.s3_bucket_text,
+#     Key=config.s3_key_text(etag=etag)
+# )
+# text = res["Body"].read().decode("utf-8")
+# res = cp_client.detect_entities(
+#     Text=text,
+#     LanguageCode="en",
+# )
+#
+# # print(json.dumps(res, indent=4))
+# for entity in res.get("Entities", []):
+#     print(entity)
 
 # {
 #     "Entities": [

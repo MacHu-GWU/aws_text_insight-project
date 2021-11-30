@@ -8,7 +8,9 @@ from .response import Response, Error
 from ..config_init import config
 from ..boto_ses import lbd_boto_ses, lbd_s3_client
 from ..dynamodb import File
+from ..helpers import join_s3_uri
 from ..fstate import FileStateEnum
+from ..ftype import FileTypeEnum
 
 lbd_tx_client = lbd_boto_ses.client("textract")
 
@@ -57,6 +59,7 @@ def merge_textract_result(
 
 def _handler(textract_event):
     etag = textract_event.JobTag
+
     try:
         file = File.get(etag)
     except:
@@ -67,7 +70,7 @@ def _handler(textract_event):
             ),
         ).to_dict()
 
-    if file.state != FileStateEnum.s3_source_to_textract_processing.value:
+    if file.state != FileStateEnum.s2_textract_async_invoke_processing.value:
         return Response(
             message="not a valid state todo",
             error=Error(
@@ -91,10 +94,10 @@ def _handler(textract_event):
     try:
         merge_textract_result(
             s3_client=lbd_s3_client,
-            s3_bucket_input=config.s3_bucket_text,
-            s3_prefix_input=f"{config.s3_prefix_text}/{etag}/{textract_event.JobId}",
-            s3_bucket_output=config.s3_bucket_text,
-            s3_key_output=config.s3_key_text(etag),
+            s3_bucket_input=config.s3_bucket_3_textract_output,
+            s3_prefix_input=f"{config.s3_prefix_3_textract_output}/{etag}/{textract_event.JobId}",
+            s3_bucket_output=config.s3_bucket_4_text,
+            s3_key_output=config.s3_key_4_text(etag),
         )
         file.update(
             actions=[
@@ -104,7 +107,11 @@ def _handler(textract_event):
         return Response(
             message="success!",
             data=dict(
-                s3_output=config.s3_uri_text(etag),
+                s3_input=config.s3_uri_4_text(etag),
+                s3_output=join_s3_uri(
+                    config.s3_bucket_3_textract_output,
+                    f"{config.s3_prefix_3_textract_output}/{etag}/{textract_event.JobId}",
+                ),
             ),
         ).to_dict()
     except:

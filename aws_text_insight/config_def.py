@@ -13,14 +13,18 @@ from .helpers import join_s3_uri
 class Configuration(AttrsClass):
     project_name: str
     stage: str
-    s3_bucket_landing: str
-    s3_prefix_landing: str
-    s3_bucket_source: str
-    s3_prefix_source: str
-    s3_bucket_text: str
-    s3_prefix_text: str
-    s3_bucket_entity: str
-    s3_prefix_entity: str
+    s3_bucket_1_landing: str
+    s3_prefix_1_landing: str
+    s3_bucket_2_source: str
+    s3_prefix_2_source: str
+    s3_bucket_3_textract_output: str
+    s3_prefix_3_textract_output: str
+    s3_bucket_4_text: str
+    s3_prefix_4_text: str
+    s3_bucket_5_comprehend_output: str
+    s3_prefix_5_comprehend_output: str
+    s3_bucket_6_entity: str
+    s3_prefix_6_entity: str
 
     @property
     def project_name_slugify(self):
@@ -34,20 +38,33 @@ class Configuration(AttrsClass):
     def cf_stack_name(self):
         return self.env_name
 
-    def s3_key_source(self, etag):
-        return f"{self.s3_prefix_source}/{etag}.file"
+    # ---
+    def s3_key_2_source(self, etag):
+        return f"{self.s3_prefix_2_source}/{etag}/file"
 
-    def s3_uri_source(self, etag):
-        return join_s3_uri(self.s3_bucket_source, self.s3_key_source(etag))
+    def s3_uri_2_source(self, etag):
+        return join_s3_uri(self.s3_bucket_2_source, self.s3_key_2_source(etag))
 
-    def s3_key_text(self, etag):
-        return f"{self.s3_prefix_text}/{etag}/text.txt"
+    def s3_key_3_textract_output(self, etag):
+        raise NotImplemented("This method should NOT be implemented")
 
-    def s3_uri_text(self, etag):
-        return join_s3_uri(self.s3_bucket_text, self.s3_key_text(etag))
+    def s3_uri_3_textract_output(self, etag):
+        raise NotImplemented("This method should NOT be implemented")
 
-    def s3_key_entity(self, etag):
-        return f"{self.s3_prefix_entity}/{etag}.json"
+    def s3_key_4_text(self, etag):
+        return f"{self.s3_prefix_4_text}/{etag}/text.txt"
 
-    def s3_uri_entity(self, etag):
-        return join_s3_uri(self.s3_bucket_entity, self.s3_key_entity(etag))
+    def s3_uri_4_text(self, etag):
+        return join_s3_uri(self.s3_bucket_4_text, self.s3_key_4_text(etag))
+
+    def s3_key_5_comprehend_output(self, etag):
+        return f"{self.s3_prefix_5_comprehend_output}/{etag}/jobs"
+
+    def s3_uri_5_comprehend_output(self, etag):
+        return join_s3_uri(self.s3_bucket_5_comprehend_output, self.s3_key_5_comprehend_output(etag))
+
+    def s3_key_6_entity(self, etag):
+        return f"{self.s3_prefix_6_entity}/{etag}/entity.json"
+
+    def s3_uri_6_entity(self, etag):
+        return join_s3_uri(self.s3_bucket_6_entity, self.s3_key_6_entity(etag))

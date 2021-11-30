@@ -10,11 +10,11 @@ dir_project_root = Path(__file__).parent.parent
 
 def s3_delete_all_objects():
     res = dev_s3_client.list_objects_v2(
-        Bucket=config.s3_bucket_landing,
+        Bucket=config.s3_bucket_1_landing,
         MaxKeys=1000,
     )
     dev_s3_client.delete_objects(
-        Bucket=config.s3_bucket_landing,
+        Bucket=config.s3_bucket_1_landing,
         Delete=dict(
             Objects=[
                 dict(Key=obj["Key"])
@@ -35,11 +35,11 @@ def upload_to_landing():
     for p in Path(dir_project_root, "tests", "files", "landing").select_file():
         dev_s3_client.upload_file(
             p.abspath,
-            config.s3_bucket_landing,
-            f"{config.s3_prefix_landing}/{p.basename}"
+            config.s3_bucket_1_landing,
+            f"{config.s3_prefix_1_landing}/{p.basename}"
         )
 
 
 s3_delete_all_objects()
 dynamodb_delete_all_item()
-upload_to_landing()
+# upload_to_landing()

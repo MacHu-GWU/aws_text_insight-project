@@ -31,10 +31,10 @@ class PerStageStack(cf.Stack):
         self.rg1_s3_buckets = cf.ResourceGroup("rg1_s3_buckets")
 
         s3_bucket_name_list = [
-            self.config.s3_bucket_landing,
-            self.config.s3_bucket_source,
-            self.config.s3_bucket_text,
-            self.config.s3_bucket_entity,
+            self.config.s3_bucket_1_landing,
+            self.config.s3_bucket_2_source,
+            self.config.s3_bucket_4_text,
+            self.config.s3_bucket_6_entity,
         ]
         s3_bucket_name_list = list(set(s3_bucket_name_list))
         self.s3_bucket_list: typing.List[s3.Bucket] = list()
@@ -104,6 +104,32 @@ class PerStageStack(cf.Stack):
             Value=self.iam_role_textract.rv_Arn,
         )
         self.rg2_iam_roles.add(self.output_iam_role_textract_arn)
+
+        self.iam_role_comprehend = iam.Role(
+            "IamRoleForComprehend",
+            p_RoleName=f"{self.config.env_name}-comprehend",
+            rp_AssumeRolePolicyDocument={
+                "Version": "2012-10-17",
+                "Statement": [
+                    {
+                        "Effect": "Allow",
+                        "Principal": {
+                            "Service": "comprehend.amazonaws.com"
+                        },
+                        "Action": "sts:AssumeRole"
+                    }
+                ]
+            },
+            p_ManagedPolicyArns=[
+                cf.helpers.iam.AwsManagedPolicy.AdministratorAccess,
+            ],
+        )
+        self.rg2_iam_roles.add(self.iam_role_comprehend)
+        self.output_iam_role_comprehend_arn = cf.Output(
+            "IamRoleComprehendArn",
+            Value=self.iam_role_comprehend.rv_Arn,
+        )
+        self.rg2_iam_roles.add(self.output_iam_role_comprehend_arn)
 
     def mk_rg3_sns_topic(self):
         self.rg3_sns_topic = cf.ResourceGroup("rg3_sns_topics")

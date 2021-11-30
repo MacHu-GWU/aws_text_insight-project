@@ -1,5 +1,9 @@
 # -*- coding: utf-8 -*-
 
+"""
+Copy file from ``landing`` to ``source``. use ``${etag}.file`` for filename.
+"""
+
 import traceback
 from .event import S3PutEvent
 from .logger import logger
@@ -13,8 +17,9 @@ from ..ftype import FileTypeEnum, detect_file_type
 
 
 def _handler(bucket, key, etag):
-    # create an item in DynamoDB
+    # -- 1. create the initial item in DynamoDB
     try:
+        # Do nothing if item already exists
         File.get(etag)
         return Response(
             message="file has been processed already",
@@ -23,6 +28,7 @@ def _handler(bucket, key, etag):
             ),
         ).to_dict()
     except File.DoesNotExist:
+        # Create the initial item if not exists
         file = File(
             etag=etag,
             state=FileStateEnum.s1_landing.value,
@@ -39,21 +45,15 @@ def _handler(bucket, key, etag):
             ),
         ).to_dict()
 
-    if file.state != FileStateEnum.s1_landing.value:
-        return Response(
-            message="not a valid state todo",
-            error=Error(
-                traceback="not a valid state todo",
-            )
-        ).to_dict()
-
+    #--- 2. detect file type, copy file to new location, update dynamodb item
     try:
+        # Detect file type
         file_type = detect_file_type(key)
 
         # relocate s3 object
         lbd_s3_client.copy_object(
-            Bucket=config.s3_bucket_source,
-            Key=config.s3_key_source(etag=file.etag),
+            Bucket=config.s3_bucket_2_source,
+            Key=config.s3_key_2_source(etag=file.etag),
             CopySource=dict(
                 Bucket=bucket,
                 Key=key,
@@ -72,10 +72,10 @@ def _handler(bucket, key, etag):
             message="success!",
             data=dict(
                 s3_input=join_s3_uri(bucket, key),
-                s3_output=config.s3_uri_source(etag=file.etag),
+                s3_output=config.s3_uri_2_source(etag=file.etag),
             ),
         ).to_dict()
-    except Exception as e:
+    except:
         file.update(
             actions=[
                 File.state.set(FileStateEnum.s1_landing_to_source_error.value),

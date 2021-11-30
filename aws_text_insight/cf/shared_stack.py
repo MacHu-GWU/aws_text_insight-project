@@ -18,10 +18,10 @@ def create_template(config: Configuration) -> cf.Template:
     tpl = cf.Template(Description=f"stack for dev, test, prod")
 
     s3_bucket_name_list = [
-        config.s3_bucket_landing,
-        config.s3_bucket_source,
-        config.s3_bucket_text,
-        config.s3_bucket_entity,
+        config.s3_bucket_1_landing,
+        config.s3_bucket_2_source,
+        config.s3_bucket_4_text,
+        config.s3_bucket_6_entity,
     ]
     s3_bucket_name_list = list(set(s3_bucket_name_list))
 

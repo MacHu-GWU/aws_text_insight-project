@@ -15,45 +15,57 @@ from ..cf.per_stage_stack import PerStageStack
 lbd_tx_client = lbd_boto_ses.client("textract")
 stack = PerStageStack(config=config)
 
-def _handler_text(etag: str, file: File, success_response: Response):
+
+def _handler_text(etag: str, file: File):
     try:
+        # for pure text file, just copy to the new location
+        s3_bucket_input = config.s3_bucket_2_source
+        s3_key_input = config.s3_key_2_source(etag=etag)
+        s3_bucket_output = config.s3_bucket_4_text
+        s3_key_output = config.s3_key_4_text(etag=etag)
         lbd_s3_client.copy_object(
-            Bucket=config.s3_bucket_text,
-            Key=config.s3_key_text(etag=etag),
+            Bucket=s3_bucket_output,
+            Key=s3_key_output,
             CopySource=dict(
-                Bucket=config.s3_bucket_source,
-                Key=config.s3_key_source(etag),
+                Bucket=s3_bucket_input,
+                Key=s3_key_input,
             )
         )
+        # update file state
+        file.update(
+            actions=[
+                File.state.set(FileStateEnum.s4_text.value),
+            ]
+        )
+        return Response(
+            message="success",
+            data=dict(
+                s3_input=join_s3_uri(s3_bucket_input, s3_key_input),
+                s3_output=join_s3_uri(s3_bucket_output, s3_key_output),
+            )
+        ).to_dict()
     except:
+        # update file state
         file.update(
             actions=[
                 File.state.set(FileStateEnum.s2_source_to_text_error.value),
             ]
         )
         return Response(
-            message="",
+            message="failed to copy pure text file to new s3 location!",
             error=Error(
                 traceback=traceback.format_exc(),
             )
         ).to_dict()
 
-    # update DynamoDB item
-    file.update(
-        actions=[
-            File.state.set(FileStateEnum.s4_text.value),
-        ]
-    )
-    return success_response.to_dict()
 
-
-def _handler_pdf_image(etag: str, file: File, success_response: Response):
+def _handler_pdf_image(etag: str, file: File):
     try:
         # run textract_client.start_document_text_detection()
-        s3_bucket_input = config.s3_bucket_source
-        s3_key_input = config.s3_key_source(etag)
-        s3_bucket_output = config.s3_bucket_text
-        s3_prefix_output = f"{config.s3_prefix_text}/{etag}"
+        s3_bucket_input = config.s3_bucket_2_source
+        s3_key_input = config.s3_key_2_source(etag)
+        s3_bucket_output = config.s3_bucket_3_textract_output
+        s3_prefix_output = f"{config.s3_prefix_3_textract_output}/{etag}"
 
         lbd_tx_client.start_document_text_detection(
             DocumentLocation=dict(
@@ -78,26 +90,32 @@ def _handler_pdf_image(etag: str, file: File, success_response: Response):
                 ),
             )
         )
-    except:
+        # update file state
         file.update(
             actions=[
-                File.state.set(FileStateEnum.s3_source_to_textract_error.value),
+                File.state.set(FileStateEnum.s2_textract_async_invoke_processing.value),
             ]
         )
         return Response(
-            message="",
+            message="success",
+            data=dict(
+                s3_input=join_s3_uri(s3_bucket_input, s3_key_input),
+                s3_output=join_s3_uri(s3_bucket_output, s3_prefix_output),
+            )
+        ).to_dict()
+    except:
+        # update file state
+        file.update(
+            actions=[
+                File.state.set(FileStateEnum.s2_textract_async_invoke_failed.value),
+            ]
+        )
+        return Response(
+            message="failed to invoke textract async API!",
             error=Error(
                 traceback=traceback.format_exc(),
             )
         ).to_dict()
-
-    # update DynamoDB item
-    file.update(
-        actions=[
-            File.state.set(FileStateEnum.s3_source_to_textract_processing.value),
-        ]
-    )
-    return success_response.to_dict()
 
 
 def _handler(etag):
@@ -119,23 +137,10 @@ def _handler(etag):
             )
         ).to_dict()
 
-    s3_bucket_input = config.s3_bucket_source
-    s3_key_input = config.s3_key_source(etag)
-    s3_bucket_output = config.s3_bucket_text
-    s3_key_output = config.s3_key_text(etag)
-
-    success_response = Response(
-        message="success",
-        data=dict(
-            s3_input=join_s3_uri(s3_bucket_input, s3_key_input),
-            s3_output=join_s3_uri(s3_bucket_output, s3_key_output),
-        )
-    )
-
     if file.type == FileTypeEnum.text.value:
-        return _handler_text(etag, file, success_response)
+        return _handler_text(etag, file)
     elif file.type in [FileTypeEnum.pdf.value, FileTypeEnum.image.value]:
-        return _handler_pdf_image(etag, file, success_response)
+        return _handler_pdf_image(etag, file)
     else:
         return Response(
             message="failed to talk to DynamoDB",

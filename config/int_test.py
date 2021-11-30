@@ -12,18 +12,18 @@ def upload_files():
     for p in Path(dir_project_root, "tests", "files").select_file():
         lbd_s3_client.upload_file(
             Filename=p.abspath,
-            Bucket=config.s3_bucket_landing,
-            Key=f"{config.s3_prefix_landing}/{p.basename}"
+            Bucket=config.s3_bucket_1_landing,
+            Key=f"{config.s3_prefix_1_landing}/{p.basename}"
         )
 
 
 def delete_files():
     response = lbd_s3_client.list_objects_v2(
-        Bucket=config.s3_bucket_landing,
-        Prefix=config.s3_prefix_landing,
+        Bucket=config.s3_bucket_1_landing,
+        Prefix=config.s3_prefix_1_landing,
     )
     lbd_s3_client.delete_objects(
-        Bucket=config.s3_bucket_source,
+        Bucket=config.s3_bucket_2_source,
         Delete=dict(
             Objects=[
                 dict(Key=content["Key"])
