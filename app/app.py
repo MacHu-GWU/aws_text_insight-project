@@ -68,7 +68,7 @@ def textract_output_to_text(event: SNSEvent):
     prefix=config.s3_prefix_4_text,
     suffix="text.txt",
     events=["s3:ObjectCreated:*", ],
-    name=f"text_to_entity",
+    name=f"text_to_comprehend_output",
 )
 def text_to_comprehend_output(event: S3Event):
     logger.info(str(event.to_dict()))

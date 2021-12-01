@@ -51,66 +51,67 @@ def _handler(
                 JobId=job_id
             )
             job_status = describe_job_response["EntitiesDetectionJobProperties"]["JobStatus"]
-        if job_status != "COMPLETED":
-            # update file state
-            file.update(
-                actions=[
-                    File.state.set(FileStateEnum.s4_comprehend_processing_failed.value),
-                ]
-            )
+        # the status won't immediately change to Complete after the output.tar.gz file created, so don't use this logic
+        # if job_status != "COMPLETED":
+        #     # update file state
+        #     file.update(
+        #         actions=[
+        #             File.state.set(FileStateEnum.s4_comprehend_processing_failed.value),
+        #         ]
+        #     )
+        #     return Response(
+        #         message="entities detect job failed!",
+        #         error=Error(
+        #             traceback=f"entities detect job failed! job_id = '{job_id}'",
+        #         ),
+        #     ).to_dict()
+
+        file.update(
+            actions=[
+                File.state.set(FileStateEnum.s5_comprehend_output.value),
+            ]
+        )
+        # the output.tar.gz file uri
+        if _is_test:
+            comprehend_output_uri = _comprehend_output_uri
+        else:
+            comprehend_output_uri = describe_job_response \
+                ["EntitiesDetectionJobProperties"]["OutputDataConfig"]["S3Uri"]
+        s3_bucket_input, s3_key_input = split_s3_uri(comprehend_output_uri)
+        s3_bucket_output = config.s3_bucket_6_entity
+        s3_key_output = config.s3_key_6_entity(etag=etag)
+
+        res = lbd_s3_client.get_object(Bucket=s3_bucket_input, Key=s3_key_input)
+        body = res["Body"].read()
+        fileobj = io.BytesIO(body)
+        comprehend_output_data = None
+        with tarfile.open(fileobj=fileobj) as tar:
+            for member in tar:
+                comprehend_output_data = json.load(tar.extractfile(member))
+                break
+        if comprehend_output_data is None:
             return Response(
-                message="entities detect job failed!",
+                message="failed to parse entity data from comprehend output!",
                 error=Error(
-                    traceback=f"entities detect job failed! job_id = '{job_id}'",
+                    traceback=f"failed to parse entity data from comprehend output",
                 ),
             ).to_dict()
-        else:
-            file.update(
-                actions=[
-                    File.state.set(FileStateEnum.s5_comprehend_output.value),
-                ]
-            )
-            # the output.tar.gz file uri
-            if _is_test:
-                comprehend_output_uri = _comprehend_output_uri
-            else:
-                comprehend_output_uri = describe_job_response \
-                    ["EntitiesDetectionJobProperties"]["OutputDataConfig"]["S3Uri"]
-            s3_bucket_input, s3_key_input = split_s3_uri(comprehend_output_uri)
-            s3_bucket_output = config.s3_bucket_6_entity
-            s3_key_output = config.s3_key_6_entity(etag=etag)
 
-            res = lbd_s3_client.get_object(Bucket=s3_bucket_input, Key=s3_key_input)
-            body = res["Body"].read()
-            fileobj = io.BytesIO(body)
-            comprehend_output_data = None
-            with tarfile.open(fileobj=fileobj) as tar:
-                for member in tar:
-                    comprehend_output_data = json.load(tar.extractfile(member))
-                    break
-            if comprehend_output_data is None:
-                return Response(
-                    message="failed to parse entity data from comprehend output!",
-                    error=Error(
-                        traceback=f"failed to parse entity data from comprehend output",
-                    ),
-                ).to_dict()
+        # Convert AWS Comprehend detect entities output to search friendly data
+        entity_data = comprehend_output_data.get("Entities", list())
 
-            # Convert AWS Comprehend detect entities output to search friendly data
-            entity_data = comprehend_output_data.get("Entities", list())
-
-            # store search friendly data to S3
-            lbd_s3_client.put_object(
-                Bucket=s3_bucket_output,
-                Key=s3_key_output,
-                Body=json.dumps(entity_data)
-            )
-            # update file state
-            file.update(
-                actions=[
-                    File.state.set(FileStateEnum.s6_entity.value),
-                ]
-            )
+        # store search friendly data to S3
+        lbd_s3_client.put_object(
+            Bucket=s3_bucket_output,
+            Key=s3_key_output,
+            Body=json.dumps(entity_data)
+        )
+        # update file state
+        file.update(
+            actions=[
+                File.state.set(FileStateEnum.s6_entity.value),
+            ]
+        )
         return Response(
             message="success!",
             data=dict(

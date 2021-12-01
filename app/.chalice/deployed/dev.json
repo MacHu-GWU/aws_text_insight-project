@@ -32,8 +32,30 @@
       "resource_type": "sns_event",
       "topic": "arn:aws:sns:us-east-1:669508176277:aws-text-insight-dev-textract",
       "lambda_arn": "arn:aws:lambda:us-east-1:669508176277:function:aws_text_insight-dev-textract_output_to_text",
-      "subscription_arn": "arn:aws:sns:us-east-1:669508176277:aws-text-insight-dev-textract:c634a995-10d3-4867-8854-769aa100a39b",
+      "subscription_arn": "arn:aws:sns:us-east-1:669508176277:aws-text-insight-dev-textract:8464582d-3d31-4b3d-b77b-2e07b6b0ab49",
       "topic_arn": "arn:aws:sns:us-east-1:669508176277:aws-text-insight-dev-textract"
+    },
+    {
+      "name": "text_to_comprehend_output",
+      "resource_type": "lambda_function",
+      "lambda_arn": "arn:aws:lambda:us-east-1:669508176277:function:aws_text_insight-dev-text_to_comprehend_output"
+    },
+    {
+      "name": "text_to_comprehend_output-s3event",
+      "resource_type": "s3_event",
+      "bucket": "aws-data-lab-sanhe-text-insight-dev",
+      "lambda_arn": "arn:aws:lambda:us-east-1:669508176277:function:aws_text_insight-dev-text_to_comprehend_output"
+    },
+    {
+      "name": "comprehend_output_to_entity",
+      "resource_type": "lambda_function",
+      "lambda_arn": "arn:aws:lambda:us-east-1:669508176277:function:aws_text_insight-dev-comprehend_output_to_entity"
+    },
+    {
+      "name": "comprehend_output_to_entity-s3event",
+      "resource_type": "s3_event",
+      "bucket": "aws-data-lab-sanhe-text-insight-dev",
+      "lambda_arn": "arn:aws:lambda:us-east-1:669508176277:function:aws_text_insight-dev-comprehend_output_to_entity"
     }
   ],
   "schema_version": "2.0",
