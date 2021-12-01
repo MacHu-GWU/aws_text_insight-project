@@ -24,6 +24,10 @@
                 "text_to_entity": {
                     "lambda_memory_size": 256,
                     "lambda_timeout": 30
+                },
+                "comprehend_output_to_entity": {
+                    "lambda_memory_size": 256,
+                    "lambda_timeout": 30
                 }
             }
         }

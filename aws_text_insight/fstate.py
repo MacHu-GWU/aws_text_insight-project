@@ -28,6 +28,8 @@ class FileStateEnum(enum.Enum):
     s4_comprehend_async_invoke_failed = 460
     # successfully invoke the async comprehend API
     s4_comprehend_async_invoke_processing = 470
+    # successfully invoke the async comprehend API, but processing failed
+    s4_comprehend_processing_failed = 480
 
     s5_comprehend_output = 500
     # failed to merge the comprehend output to single json file

@@ -59,7 +59,6 @@ def _handler(bucket, key, etag):
                 Key=key,
             )
         )
-
         # update DynamoDB item
         file.update(
             actions=[
@@ -67,7 +66,6 @@ def _handler(bucket, key, etag):
                 File.state.set(FileStateEnum.s2_source.value),
             ]
         )
-
         return Response(
             message="success!",
             data=dict(

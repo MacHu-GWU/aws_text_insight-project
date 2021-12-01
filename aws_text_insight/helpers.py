@@ -61,11 +61,6 @@ def s3_delete_if_exists(
         bucket, key = split_s3_uri(s3_uri)
 
     if is_dir:
-        try:
-            s3_client.delete_object(Bucket=bucket, Key=key)
-        except:
-            pass
-    else:
         res = s3_client.list_objects_v2(
             Bucket=bucket,
             Prefix=s3_key_join([key, ], is_dir=True),
@@ -82,6 +77,11 @@ def s3_delete_if_exists(
                     ]
                 ),
             )
+    else:
+        try:
+            s3_client.delete_object(Bucket=bucket, Key=key)
+        except:
+            pass
 
 
 def s3_is_exists(

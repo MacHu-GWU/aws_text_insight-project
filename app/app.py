@@ -12,11 +12,13 @@ if "AWS_CHALICE_CLI_MODE" in os.environ:
     runtime.current_runtime = runtime.RuntimeEnum.lbd
 
 from aws_text_insight.config_init import config
+from aws_text_insight.lbd.logger import logger
 from aws_text_insight.lbd import (
     hdl_1_landing_to_source,
     hdl_2_source_to_textract_output,
     hdl_3_textract_output_to_text,
     hdl_4_text_to_comprehend_output,
+    hdl_5_comprehend_output_to_entity,
 )
 from aws_text_insight.boto_ses import lbd_boto_ses
 from aws_text_insight.cf.per_stage_stack import PerStageStack
@@ -33,6 +35,7 @@ stack = PerStageStack(config=config)
     name=f"landing_to_source",
 )
 def landing_to_source(event: S3Event):
+    logger.info(str(event.to_dict()))
     return hdl_1_landing_to_source.handler(event.to_dict(), event.context)
 
 
@@ -44,6 +47,7 @@ def landing_to_source(event: S3Event):
     name=f"source_to_text",
 )
 def source_to_text(event: S3Event):
+    logger.info(str(event.to_dict()))
     return hdl_2_source_to_textract_output.handler(event.to_dict(), event.context)
 
 
@@ -55,6 +59,7 @@ def source_to_text(event: S3Event):
     name=f"textract_output_to_text",
 )
 def textract_output_to_text(event: SNSEvent):
+    logger.info(str(event.to_dict()))
     return hdl_3_textract_output_to_text.handler(event.to_dict(), event.context)
 
 
@@ -66,4 +71,17 @@ def textract_output_to_text(event: SNSEvent):
     name=f"text_to_entity",
 )
 def text_to_comprehend_output(event: S3Event):
+    logger.info(str(event.to_dict()))
     return hdl_4_text_to_comprehend_output.handler(event.to_dict(), event.context)
+
+
+@app.on_s3_event(
+    bucket=config.s3_bucket_5_comprehend_output,
+    prefix=config.s3_prefix_5_comprehend_output,
+    suffix="output.tar.gz",
+    events=["s3:ObjectCreated:*", ],
+    name=f"comprehend_output_to_entity",
+)
+def comprehend_output_to_entity(event: S3Event):
+    logger.info(str(event.to_dict()))
+    return hdl_5_comprehend_output_to_entity.handler(event.to_dict(), event.context)
