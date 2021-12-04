@@ -85,3 +85,22 @@ def text_to_comprehend_output(event: S3Event):
 def comprehend_output_to_entity(event: S3Event):
     logger.info(str(event.to_dict()))
     return hdl_5_comprehend_output_to_entity.handler(event.to_dict(), event.context)
+
+
+try:
+    from aws_text_insight.lbd import hdl_6_entity_to_opensearch
+
+    @app.on_s3_event(
+        bucket=config.s3_bucket_6_entity,
+        prefix=config.s3_prefix_6_entity,
+        suffix="entity.json",
+        events=["s3:ObjectCreated:*", ],
+        name=f"entity_to_opensearch",
+    )
+    def entity_to_opensearch(event: S3Event):
+        logger.info(str(event.to_dict()))
+        return hdl_6_entity_to_opensearch.handler(event.to_dict(), event.context)
+except ImportError:
+    pass
+except:
+    raise

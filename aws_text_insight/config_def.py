@@ -26,6 +26,9 @@ class Configuration(AttrsClass):
     s3_bucket_6_entity: str
     s3_prefix_6_entity: str
 
+    opensearch_endpoint: str
+    opensearch_docs_index_name: str
+
     @property
     def project_name_slugify(self):
         return self.project_name.replace("_", "-")

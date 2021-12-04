@@ -119,3 +119,8 @@ def s3_upload_and_md5_rename(
             is_dir=False
         )
     )
+
+
+#--- Naming convention
+def to_camel_case(text: str) -> str:
+    return text.title().replace("-", "").replace("_", "")

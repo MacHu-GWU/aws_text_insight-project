@@ -6,7 +6,7 @@
             "iam_role_arn": "arn:aws:iam::669508176277:role/aws-text-insight-dev-lambda-execution",
             "manage_iam_role": false,
             "layers": [
-                "arn:aws:lambda:us-east-1:669508176277:layer:aws_text_insight:3"
+                "arn:aws:lambda:us-east-1:669508176277:layer:aws_text_insight:4"
             ],
             "lambda_functions": {
                 "landing_to_source": {
@@ -27,6 +27,10 @@
                 },
                 "comprehend_output_to_entity": {
                     "lambda_memory_size": 256,
+                    "lambda_timeout": 30
+                },
+                "entity_to_opensearch": {
+                    "lambda_memory_size": 512,
                     "lambda_timeout": 30
                 }
             }

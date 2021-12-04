@@ -10,10 +10,7 @@ import typing
 import cottonformation as cf
 from cottonformation.res import s3, iam, sns
 from ..config_init import Configuration
-
-
-def to_camel_case(text: str) -> str:
-    return text.title().replace("-", "").replace("_", "")
+from ..helpers import to_camel_case
 
 
 @attr.s
@@ -68,7 +65,15 @@ class PerStageStack(cf.Stack):
                 ]
             },
             p_ManagedPolicyArns=[
-                cf.helpers.iam.AwsManagedPolicy.AdministratorAccess,
+                cf.helpers.iam.AwsManagedPolicy.AWSLambdaBasicExecutionRole,
+                cf.helpers.iam.AwsManagedPolicy.AWSLambdaVPCAccessExecutionRole,
+                cf.helpers.iam.AwsManagedPolicy.AmazonSSMFullAccess,
+                cf.helpers.iam.AwsManagedPolicy.AmazonS3FullAccess,
+                cf.helpers.iam.AwsManagedPolicy.AmazonDynamoDBFullAccess,
+                cf.helpers.iam.AwsManagedPolicy.AmazonTextractFullAccess,
+                cf.helpers.iam.AwsManagedPolicy.ComprehendFullAccess,
+                cf.helpers.iam.AwsManagedPolicy.AWSCloudFormationFullAccess,
+                cf.helpers.iam.AwsManagedPolicy.IAMFullAccess,
             ]
         )
         self.rg2_iam_roles.add(self.iam_role_lbd)
@@ -95,7 +100,8 @@ class PerStageStack(cf.Stack):
                 ]
             },
             p_ManagedPolicyArns=[
-                cf.helpers.iam.AwsManagedPolicy.AdministratorAccess,
+                cf.helpers.iam.AwsManagedPolicy.AmazonS3FullAccess,
+                cf.helpers.iam.AwsManagedPolicy.AmazonSNSFullAccess,
             ],
         )
         self.rg2_iam_roles.add(self.iam_role_textract)
@@ -121,7 +127,7 @@ class PerStageStack(cf.Stack):
                 ]
             },
             p_ManagedPolicyArns=[
-                cf.helpers.iam.AwsManagedPolicy.AdministratorAccess,
+                cf.helpers.iam.AwsManagedPolicy.AmazonS3FullAccess,
             ],
         )
         self.rg2_iam_roles.add(self.iam_role_comprehend)

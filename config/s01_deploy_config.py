@@ -24,10 +24,12 @@ def config_maker(stage, bucket, prefix):
         s3_prefix_5_comprehend_output=f"{prefix}/comprehend-output",
         s3_bucket_6_entity=f"{bucket}-{stage}",
         s3_prefix_6_entity=f"{prefix}/entity",
+        opensearch_endpoint="search-public-no-grained-control-ufwufpla4i23iii4ghrfalz5b4.us-east-1.es.amazonaws.com",
+        opensearch_docs_index_name="docs",
     )
 
 
-stage = "prod"
+stage = "dev"
 bucket = "aws-data-lab-sanhe-text-insight"
 prefix = "poc"
 param_name = f"text_insight_{stage}"

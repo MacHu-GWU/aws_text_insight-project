@@ -32,7 +32,7 @@
       "resource_type": "sns_event",
       "topic": "arn:aws:sns:us-east-1:669508176277:aws-text-insight-dev-textract",
       "lambda_arn": "arn:aws:lambda:us-east-1:669508176277:function:aws_text_insight-dev-textract_output_to_text",
-      "subscription_arn": "arn:aws:sns:us-east-1:669508176277:aws-text-insight-dev-textract:8464582d-3d31-4b3d-b77b-2e07b6b0ab49",
+      "subscription_arn": "arn:aws:sns:us-east-1:669508176277:aws-text-insight-dev-textract:6d58204f-fe1c-4071-80ce-c08d93f5d9b9",
       "topic_arn": "arn:aws:sns:us-east-1:669508176277:aws-text-insight-dev-textract"
     },
     {
@@ -56,6 +56,17 @@
       "resource_type": "s3_event",
       "bucket": "aws-data-lab-sanhe-text-insight-dev",
       "lambda_arn": "arn:aws:lambda:us-east-1:669508176277:function:aws_text_insight-dev-comprehend_output_to_entity"
+    },
+    {
+      "name": "entity_to_opensearch",
+      "resource_type": "lambda_function",
+      "lambda_arn": "arn:aws:lambda:us-east-1:669508176277:function:aws_text_insight-dev-entity_to_opensearch"
+    },
+    {
+      "name": "entity_to_opensearch-s3event",
+      "resource_type": "s3_event",
+      "bucket": "aws-data-lab-sanhe-text-insight-dev",
+      "lambda_arn": "arn:aws:lambda:us-east-1:669508176277:function:aws_text_insight-dev-entity_to_opensearch"
     }
   ],
   "schema_version": "2.0",

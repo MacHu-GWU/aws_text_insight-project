@@ -9,3 +9,4 @@ pysecret==1.0.1
 jsonpickle
 cottonformation==0.0.4
 opensearch-py==1.0.0
+requests_aws4auth==1.1.1
